@@ -33,6 +33,23 @@ $site-top:           124px;
   }
 }
 
+.styleguide-header {
+  font-weight: normal;
+  h2 & {
+    color: pink;
+  }
+}
+
+h2.styleguide-header {
+  border-bottom: 2px solid $color-base;
+  padding-bottom: .5em;
+}
+
+.download_link {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
 // Sidebar Nav --------- //
 
 .sidenav {
@@ -58,6 +75,10 @@ $site-top:           124px;
   @include media($medium-screen + $width-nav-sidebar) {
     display: block;
   }
+}
+
+.sidenav .usa-current ~ .usa-sidenav-sub_list {
+    display: block;
 }
 
 // Styleguide Content -------- //
@@ -96,7 +117,6 @@ $site-top:           124px;
 
 // This is a styleguide-only rule and is not needed in the main library code for 
 // the footer component which uses different styles
-// TODO investigate why it's not needed in the main library CSS
   p, a {
     @include media($medium-screen) {
       margin-bottom: 0;
@@ -110,11 +130,6 @@ $site-top:           124px;
   }
 }
 
-.sidenav .usa-current ~ .usa-sidenav-sub_list {
-    display: block;
-}
-
-.download_link {
-  display: inline-block;
-  margin-bottom: 1em;
+.type-example {
+  margin-top: .5em;
 }
