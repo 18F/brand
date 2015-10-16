@@ -12,4 +12,4 @@ exclude:
 - web-design-standards/pages
 
 sass:
-  style: compressed
+  style: nested
