@@ -3,7 +3,14 @@ name: 18F Brand
 exclude:
 - README.md
 - LICENSE
-- web-design-standards
+- web-design-standards/CONTRIBUTING.md
+- web-design-standards/Gemfile
+- web-design-standards/Gemfile.lock
+- web-design-standards/LICENSE.md
+- web-design-standards/README.md
+- web-design-standards/assets-styleguide
+- web-design-standards/go
+- web-design-standards/pages
 
 sass:
   style: compressed

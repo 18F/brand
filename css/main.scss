@@ -3,32 +3,32 @@
 
 // Vendor -------------- //
 
-@import 'uswds/lib/bourbon/bourbon';
-@import 'uswds/lib/neat/neat';
-@import 'uswds/lib/normalize';
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import 'lib/normalize';
 
 
 // Core -------------- //
 
-@import 'uswds/core/grid-settings';
-@import 'uswds/core/defaults';
-@import 'uswds/core/variables';
+@import 'core/grid-settings';
+@import 'core/defaults';
+@import 'core/variables';
 @import 'variables';
-@import 'uswds/core/base';
-@import 'uswds/core/grid';
-@import 'uswds/core/utilities';
+@import 'core/base';
+@import 'core/grid';
+@import 'core/utilities';
 
 
 // Elements -------------- //
 
-@import 'uswds/elements/typography';
-@import 'uswds/elements/list';
-@import 'uswds/elements/figure';
+@import 'elements/typography';
+@import 'elements/list';
+@import 'elements/figure';
 
 
 // Components -------------- //
 
-@import 'uswds/components/sidenav';
+@import 'components/sidenav';
 
 // Custom styles ---------- //
 
