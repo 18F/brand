@@ -1,0 +1,34 @@
+---
+---
+
+// Vendor -------------- //
+
+@import 'uswds/lib/bourbon/bourbon';
+@import 'uswds/lib/neat/neat';
+@import 'uswds/lib/normalize';
+
+
+// Core -------------- //
+
+@import 'uswds/core/grid-settings';
+@import 'uswds/core/defaults';
+@import 'uswds/core/variables';
+@import 'variables';
+@import 'uswds/core/base';
+@import 'uswds/core/grid';
+@import 'uswds/core/utilities';
+
+
+// Elements -------------- //
+
+@import 'uswds/elements/typography';
+@import 'uswds/elements/list';
+
+
+// Components -------------- //
+
+@import 'uswds/components/sidenav';
+
+// Custom styles ---------- //
+
+@import 'styleguide';

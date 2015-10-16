@@ -1,0 +1,33 @@
+{% assign current = page.url | downcase | split: '/' %}
+
+<aside class="sidenav" id="menu-content">
+  <nav>
+    <ul class="usa-sidenav-list">
+      <li>
+        <a {% if current[1] %}{% else %}class="usa-current"{% endif %} href="{{ site.baseurl }}/">Visual style</a>
+        <ul class="usa-sidenav-sub_list visual-style-sublist">
+          <li>
+            <a href="{{ site.baseurl }}/#logo">Logo</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/#colors">Color Palette</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/#typography">Typography</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a {% if current[1] == 'resources' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/resources/">Resources</a>
+        <ul class="usa-sidenav-sub_list visual-style-sublist">
+          <li>
+            <a href="{{ site.baseurl }}/#keynote">Keynote</a>
+          </li>
+          <li>
+            <a href="{{ site.baseurl }}/#google">Google</a>
+          </li>
+        </ul>
+      </li> 
+    </ul>
+  </nav>
+</aside>

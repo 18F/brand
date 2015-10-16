@@ -1,0 +1,9 @@
+name: 18F Brand
+
+exclude:
+- README.md
+- LICENSE
+- web-design-standards
+
+sass:
+  style: compressed

@@ -1,0 +1,3 @@
+[submodule "web-design-standards"]
+	path = web-design-standards
+	url = git@github.com:18F/web-design-standards.git
