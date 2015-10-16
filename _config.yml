@@ -8,7 +8,6 @@ exclude:
 - web-design-standards/Gemfile.lock
 - web-design-standards/LICENSE.md
 - web-design-standards/README.md
-- web-design-standards/assets-styleguide
 - web-design-standards/go
 - web-design-standards/pages
 
