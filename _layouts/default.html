@@ -7,6 +7,8 @@
   </head>
 
   <body class="{{ page.title | slugify }}">
+
+    {% include navbar.html %}
   
     {% include sidenav.html %}
 
@@ -21,6 +23,8 @@
         {% include footer.html %}
       </footer>
     </div>
+
+    {% include scripts.html %}
 
     <script src="{{ site.baseurl }}/web-design-standards/assets/js/components.js"></script>
 

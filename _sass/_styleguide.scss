@@ -1,7 +1,124 @@
 // Variables -------------- //
 
 $width-nav-sidebar:  250px;
-$site-top:           124px;
+$site-top:           98px;
+
+// Navigation ------------- //
+
+.usa-site-header {
+  background-color: $color-white;
+  border-bottom: 1px solid $color-gray-light;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  
+  a {
+    border-bottom: none;
+  }
+
+  .usa-site-navbar {
+    @include media($medium-screen + $width-nav-sidebar) {
+      height: 6rem;
+      margin: {
+        bottom: 1rem;
+        top: 2.7rem;
+      }
+    }
+    margin-top: 4px;
+
+    .logo {
+      @include media($medium-screen + $width-nav-sidebar) {
+        padding-left: $site-margins;
+        text-align: left; 
+        padding-top: 0;
+        width: auto;
+      }
+      float: left;
+      text-align: center;
+      padding-top: 1.3rem;
+      width: 70%;
+
+      a {
+        color: $color-gray;
+
+        &:hover {
+          color: $color-gray-dark;
+          text-decoration: none;
+        }
+      }
+    }
+
+    h1 {
+      @include media($medium-screen + $width-nav-sidebar) {
+        display: block;
+        font-size: $h3-font-size;
+        margin-top: .9rem;
+      }
+      margin: 0;
+      font-size: $h5-font-size;
+    }
+  }
+}
+
+.menu-btn {
+  @include media($medium-screen + $width-nav-sidebar) {
+    display: none;
+  }
+  display: inline;
+  float: left;
+  margin-top: -4px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: $color-white;
+  background-color: $color-primary;
+  font-size: 1.5rem;
+  width: 15%;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-white;
+    background-color: $color-primary-darker;
+  }
+  
+  &:visited {
+    color: $color-white;
+  }
+}
+
+#menu-content {
+  @media (max-width: $medium-screen + $width-nav-sidebar) {
+    $sliding-panel-width: 220px;
+
+    @include position(fixed, 0 auto 0 0);
+    @include size($sliding-panel-width 100%);
+    @include transform(translateX(- $sliding-panel-width));
+    background: #fff;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    z-index: 999999;
+    display: block;
+    &.is-visible {
+      @include transition(all 0.25s linear);
+      @include transform(translateX(0));
+    }
+  }
+}
+
+.overlay {
+  @include position(fixed, 0 0 0 0);
+  @include transition;
+  background: #000;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+
+  &.is-visible {
+    visibility: visible;
+  }
+}
 
 // Main Content --------- //
 
