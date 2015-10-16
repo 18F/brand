@@ -1,8 +1,6 @@
 // Variables -------------- //
 
 $width-nav-sidebar:  250px;
-$color-grid-dark:    #727272;
-$color-grid-light:   #e3e4e5;
 $site-top:           124px;
 
 // Main Content --------- //
@@ -18,17 +16,17 @@ $site-top:           124px;
   width: 100%;
   padding: {
     bottom: 0;
-//    left: 2em;
-//    right: 2em;
     top: 1em;
   }
   z-index: -1;
+
   .lt-ie9 & {
     width: 75%;
   }
 
   @include media($medium-screen + $width-nav-sidebar) {
     width: calc(100% - #{$width-nav-sidebar});
+    
     .lt-ie9 & {
       width: 75%;
     }
@@ -114,4 +112,9 @@ $site-top:           124px;
 
 .sidenav .usa-current ~ .usa-sidenav-sub_list {
     display: block;
+}
+
+.download_link {
+  display: inline-block;
+  margin-bottom: 1em;
 }
