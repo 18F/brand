@@ -152,13 +152,6 @@ $site-top:           98px;
   }
 }
 
-.styleguide-header {
-  font-weight: normal;
-  h2 & {
-    color: pink;
-  }
-}
-
 h2.styleguide-header {
   border-bottom: 2px solid $color-base;
   padding-bottom: .5em;
