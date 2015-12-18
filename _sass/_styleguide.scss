@@ -41,7 +41,7 @@ $site-top:           98px;
       width: 70%;
 
       a {
-        color: $color-gray;
+        color: $color-primary-dark;
 
         &:hover {
           color: $color-gray-dark;
@@ -170,6 +170,7 @@ h2.styleguide-header {
 // Sidebar Nav --------- //
 
 .sidenav {
+  background-color: $color-primary-dark;
   position: fixed;
   top: $site-top;
   bottom: 0;
@@ -187,6 +188,10 @@ h2.styleguide-header {
 
   .usa-sidenav-sub_list {
     display: none;
+  }
+
+  a {
+    color: $color-white;
   }
 
   @include media($medium-screen + $width-nav-sidebar) {
@@ -226,7 +231,7 @@ h2.styleguide-header {
 // Footer --------------- //
 
 .usa-styleguide-footer {
-  background-color: $color-primary-darker;
+  background-color: $color-primary-dark;
   padding: {
     bottom: 3rem;
     top: 3rem;
@@ -250,6 +255,159 @@ h2.styleguide-header {
 .type-example {
   margin-top: .5em;
 }
+
+// Colors -------------- //
+
+.usa-color-short {
+  height: 7rem;
+  margin-bottom: 1rem;
+}
+
+.usa-color-name {
+  @include media($medium-screen) {
+    margin: 0;
+  }
+  margin: {
+    bottom: 1em;
+    top: 0;
+  }
+}
+
+.usa-color-row {
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+
+  .color-big {
+    @include media($medium-screen) {
+      float: left;
+      padding-right: 4%;
+      width: 32%;
+    }
+  }
+
+  .color-small {
+    float: left;
+    width: 50%;
+
+    @include media($medium-screen) {
+      width: 17%;
+    }
+    margin-right: 0;
+  }
+
+  p {
+    font-family:  monospace, monospace;
+  }
+}
+
+.usa-primary-color-section {
+  @include media($medium-screen) {
+    margin-bottom: 8rem;
+  }
+  margin-bottom: 0;
+
+  .usa-color-square {
+    @include span-columns(6);
+    margin-bottom: 7rem;
+    padding-bottom: 50%;
+    position: relative;
+
+    @include media($medium-screen) {
+      @include span-columns(3);
+      margin-bottom: 0;
+      padding-bottom: 19%;
+    }
+  }
+
+  .usa-mobile-end-row {
+    @include media($medium-screen) {
+      margin-right: 2.35765%;
+    }
+    margin-right: 0;
+  }
+
+  .usa-color-name {
+    margin: 0;
+  }
+}
+
+.usa-color-inner-content {
+  position: absolute;
+  top: 100%;
+}
+
+.usa-color-hex {
+  font-weight: $font-bold;
+  margin: {
+    bottom: 0;
+    top: 1rem;
+  }
+}
+
+.usa-color-name {
+  font-size: 1.2rem;
+}
+
+.usa-color-text {
+  font-weight: $font-bold;
+  margin-bottom: .4rem;
+  padding: {
+    bottom: 1rem;
+    left: 2rem;
+    right: 2rem;
+    top: 1rem;
+  }
+}
+
+.usa-color-outline {
+  .usa-color-text {
+    box-shadow: inset 0 0 0 1px $color-gray;
+  }
+}
+
+// Color background helpers
+
+.usa-color-primary {
+  background-color: $color-primary;
+}
+
+.usa-color-primary-dark {
+  background-color: $color-primary-dark;
+}
+
+.usa-color-primary-light {
+  background-color: $color-primary-light;
+}
+
+.usa-color-base {
+  background-color: $color-black;
+}
+
+.usa-color-gray-dark {
+  background-color: $color-gray-dark;
+}
+
+.usa-color-gray-light {
+  background-color: $color-gray-light;
+}
+
+.usa-color-white {
+  background-color: $color-white;
+  box-shadow: inset 0 0 0 1px $color-gray;
+}
+
+.usa-color-primary-alt {
+  background-color: $color-primary-alt;
+}
+
+.usa-color-primary-alt-dark {
+  background-color: $color-primary-alt-dark;
+}
+
+.usa-color-primary-alt-darkest {
+  background-color: $color-primary-alt-darkest;
+}
+
 
 // Custom CSS --------------- //
 
