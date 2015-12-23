@@ -41,7 +41,7 @@ $site-top:           98px;
       width: 70%;
 
       a {
-        color: $color-primary-dark;
+        color: $color-primary-darkest;
 
         &:hover {
           color: $color-gray-dark;
@@ -165,7 +165,7 @@ h2.styleguide-header {
 // Sidebar Nav --------- //
 
 .sidenav {
-  background-color: $color-primary-dark;
+  background-color: $color-primary-darkest;
   position: fixed;
   top: $site-top;
   bottom: 0;
@@ -226,7 +226,7 @@ h2.styleguide-header {
 // Footer --------------- //
 
 .usa-styleguide-footer {
-  background-color: $color-primary-dark;
+  background-color: $color-primary-darkest;
   padding: {
     bottom: 3rem;
     top: 3rem;
@@ -366,6 +366,10 @@ h2.styleguide-header {
   background-color: $color-primary;
 }
 
+.usa-color-primary-darkest {
+  background-color: $color-primary-darkest;
+}
+
 .usa-color-primary-dark {
   background-color: $color-primary-dark;
 }
@@ -388,7 +392,7 @@ h2.styleguide-header {
 
 .usa-color-white {
   background-color: $color-white;
-  box-shadow: inset 0 0 0 1px $color-gray;
+  box-shadow: inset 0 0 0 2px $color-gray-light;
 }
 
 .usa-color-primary-alt {
@@ -401,6 +405,20 @@ h2.styleguide-header {
 
 .usa-color-primary-alt-darkest {
   background-color: $color-primary-alt-darkest;
+}
+
+.usa-color-text-white {
+  color: $color-white;
+}
+
+.usa-color-text-black {
+  color: $color-black;
+}
+
+.color-col-tall .usa-color-text {
+  margin-bottom: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 
