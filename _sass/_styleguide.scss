@@ -187,6 +187,10 @@ h2.styleguide-header {
 
   a {
     color: $color-white;
+
+    &:hover {
+      color: $color-primary-darkest;
+    }
   }
 
   @include media($medium-screen + $width-nav-sidebar) {
