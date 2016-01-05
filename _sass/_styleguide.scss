@@ -257,6 +257,10 @@ h2.styleguide-header {
       top: 0;
     }
   }
+
+  a:hover {
+    color: $color-primary;
+  }
 }
 
 .type-example {
@@ -281,7 +285,7 @@ h2.styleguide-header {
   font-family:  monospace, helvetica, sans-serif;
   margin-bottom: 1em;
   margin-top: 0;
-  
+
   @include media($medium-screen) {
     margin: 0;
   }
