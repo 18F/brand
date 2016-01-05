@@ -48,6 +48,10 @@ $site-top:           98px;
           text-decoration: none;
         }
       }
+
+      img {
+        max-width: 48px;
+      }
     }
 
     h1 {
@@ -460,3 +464,6 @@ a {
   }
 }
 
+.display-logo {
+  max-width: 162px;
+}
