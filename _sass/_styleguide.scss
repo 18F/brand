@@ -73,20 +73,20 @@ $site-top:           98px;
   margin-top: -4px;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  color: $color-white;
+  color: $color-black;
   background-color: $color-primary;
   font-size: 1.5rem;
   width: 15%;
   text-align: center;
+  
+  &:visited {
+    color: $color-black;
+  }
 
   &:hover {
     text-decoration: none;
     color: $color-white;
-    background-color: $color-primary-darker;
-  }
-  
-  &:visited {
-    color: $color-white;
+    background-color: $color-primary-dark;
   }
 }
 
@@ -157,6 +157,10 @@ h2.styleguide-header {
   padding-bottom: .5em;
 }
 
+.styleguide-header {
+  font-weight: $font-normal;
+}
+
 .download_link {
   display: inline-block;
   margin-bottom: 1em;
@@ -165,7 +169,7 @@ h2.styleguide-header {
 // Sidebar Nav --------- //
 
 .sidenav {
-  background-color: $color-primary-darkest;
+  background-color: $color-white;
   position: fixed;
   top: $site-top;
   bottom: 0;
@@ -186,10 +190,10 @@ h2.styleguide-header {
   }
 
   a {
-    color: $color-white;
+    color: $color-primary-dark;
 
     &:hover {
-      color: $color-primary-darkest;
+      color: $color-primary-dark;
     }
   }
 
@@ -312,9 +316,9 @@ h2.styleguide-header {
     position: relative;
 
     @include media($medium-screen) {
-      @include span-columns(3);
+      @include span-columns(2);
       margin-bottom: 0;
-      padding-bottom: 19%;
+      padding-bottom: 14.70196%;
     }
   }
 
@@ -434,5 +438,25 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: $color-primary-dark;
+}
+
+.usa-sidenav-list {
+  a {
+    color: $color-base;
+
+    &.usa-current {
+      border-left-color: $color-primary-dark;
+      color: $color-primary-dark;
+    }
+  }
+}
+
+.usa-button {
+  color: $color-primary-darkest !important;
+
+  &:hover {
+    background-color: $color-primary-dark !important;
+    color: $color-white !important;
+  }
 }
 
