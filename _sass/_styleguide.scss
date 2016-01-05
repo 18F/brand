@@ -271,12 +271,19 @@ h2.styleguide-header {
 }
 
 .usa-color-name {
+  font-weight: $font-bold;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+.usa-color-hex {
+  font-family:  monospace, helvetica, sans-serif;
+  margin-bottom: 1em;
+  margin-top: 0;
+  
   @include media($medium-screen) {
     margin: 0;
-  }
-  margin: {
-    bottom: 1em;
-    top: 0;
   }
 }
 
@@ -300,10 +307,6 @@ h2.styleguide-header {
       width: 17%;
     }
     margin-right: 0;
-  }
-
-  p {
-    font-family:  monospace, monospace;
   }
 }
 
@@ -332,27 +335,11 @@ h2.styleguide-header {
     }
     margin-right: 0;
   }
-
-  .usa-color-name {
-    margin: 0;
-  }
 }
 
 .usa-color-inner-content {
   position: absolute;
   top: 100%;
-}
-
-.usa-color-hex {
-  font-weight: $font-bold;
-  margin: {
-    bottom: 0;
-    top: 1rem;
-  }
-}
-
-.usa-color-name {
-  font-size: 1.2rem;
 }
 
 .usa-color-text {
