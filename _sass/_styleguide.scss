@@ -157,7 +157,7 @@ $site-top:           98px;
 }
 
 h2.styleguide-header {
-  border-bottom: 2px solid $color-black;
+  border-bottom: 1px solid $color-gray-light;
   padding-bottom: .5em;
 }
 
@@ -282,7 +282,6 @@ h2.styleguide-header {
 }
 
 .usa-color-hex {
-  font-family:  monospace, helvetica, sans-serif;
   margin-bottom: 1em;
   margin-top: 0;
 
@@ -443,6 +442,10 @@ a {
       border-left-color: $color-medium;
       color: $color-medium;
     }
+  }
+
+  > li {
+    border-top: 1px solid $color-gray-light;
   }
 }
 
