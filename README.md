@@ -4,7 +4,7 @@ This is the home of 18F's evolving brand assets and style guide. It's a work in 
 ## Assets available now:
 - Logo files
 - Favicon files
-- Color palette and preliminary 5text/background color guidance to conform with 508 standards.
+- Color palette and preliminary text/background color guidance to conform with 508 standards.
 - 18F Nimbus font files
 - Keynote template and example presentation
 - Desktop art
