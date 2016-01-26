@@ -3,6 +3,9 @@
 <aside class="sidenav" id="menu-content">
   <nav>
     <ul class="usa-sidenav-list">
+      <li> 
+        <a {% if current[1] == 'introduction' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/introduction/">Introduction</a>
+      </li>
       <li>
         <a {% if current[1] %}{% else %}class="usa-current"{% endif %} href="{{ site.baseurl }}/">Visual style</a>
         <ul class="usa-sidenav-sub_list visual-style-sublist">
