@@ -1,13 +1,14 @@
 {% assign current = page.url | downcase | split: '/' %}
 
+
 <aside class="sidenav" id="menu-content">
   <nav>
     <ul class="usa-sidenav-list">
       <li> 
-        <a {% if current[1] == 'introduction' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/introduction/">Introduction</a>
+        <a {% if page.url == "/" %}class="usa-current"{% endif %} href="{{ site.baseurl }}/">Introduction</a>
       </li>
       <li>
-        <a {% if current[1] %}{% else %}class="usa-current"{% endif %} href="{{ site.baseurl }}/">Visual style</a>
+        <a {% if current[1] == 'visual-style' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/visual-style/">Visual style</a>
         <ul class="usa-sidenav-sub_list visual-style-sublist">
           <li>
             <a href="{{ site.baseurl }}/#logo">Logo</a>
