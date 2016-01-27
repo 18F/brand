@@ -4,10 +4,10 @@
   <nav>
     <ul class="usa-sidenav-list">
       <li> 
-        <a {% if page.url == "/" %}class="usa-current"{% endif %} href="/">Introduction</a>
+        <a {% if page.url == "/" %}class="usa-current"{% endif %} href="{{ site.baseurl }}/">Introduction</a>
       </li>
       <li>
-        <a {% if current[1] == 'visual-style' %}class="usa-current"{% endif %} href="/visual-style/">Visual style</a>
+        <a {% if current[1] == 'visual-style' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/visual-style/">Visual style</a>
         <ul class="usa-sidenav-sub_list visual-style-sublist">
           <li>
             <a href="#logo">Logo</a>
@@ -21,7 +21,7 @@
         </ul>
       </li>
       <li>
-        <a {% if current[1] == 'resources' %}class="usa-current"{% endif %} href="/resources/">Resources</a>
+        <a {% if current[1] == 'resources' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/resources/">Resources</a>
         <ul class="usa-sidenav-sub_list visual-style-sublist">
           <li>
             <a href="#instructions">Instructions</a>
