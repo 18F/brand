@@ -3,31 +3,34 @@
 <aside class="sidenav" id="menu-content">
   <nav>
     <ul class="usa-sidenav-list">
+      <li> 
+        <a {% if page.url == "/" %}class="usa-current"{% endif %} href="/">Introduction</a>
+      </li>
       <li>
-        <a {% if current[1] %}{% else %}class="usa-current"{% endif %} href="{{ site.baseurl }}/">Visual style</a>
+        <a {% if current[1] == 'visual-style' %}class="usa-current"{% endif %} href="/visual-style/">Visual style</a>
         <ul class="usa-sidenav-sub_list visual-style-sublist">
           <li>
-            <a href="{{ site.baseurl }}/#logo">Logo</a>
+            <a href="#logo">Logo</a>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/#colors">Color palette</a>
+            <a href="#colors">Color palette</a>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/#typography">Typography</a>
+            <a href="#typography">Typography</a>
           </li>
         </ul>
       </li>
       <li>
-        <a {% if current[1] == 'resources' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/resources/">Resources</a>
+        <a {% if current[1] == 'resources' %}class="usa-current"{% endif %} href="/resources/">Resources</a>
         <ul class="usa-sidenav-sub_list visual-style-sublist">
           <li>
-            <a href="{{ site.baseurl }}/resources/#instructions">Instructions</a>
+            <a href="#instructions">Instructions</a>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/resources/#keynote">Keynote</a>
+            <a href="#keynote">Keynote</a>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/resources/#desktop">Desktop art</a>
+            <a href="#desktop">Desktop art</a>
           </li>
         </ul>
       </li> 
