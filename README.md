@@ -1,5 +1,7 @@
 # 18F Brand
-This is the home of 18F's evolving brand assets and style guide. It's a work in progress, as we're releasing new assets incrementally. Come visit us in #18f-branding on slack for help with implementing these assets, questions, or to philosophize on the meaning of type.
+This is the home of 18F's evolving brand assets and style guide. It's a work in progress, and we are releasing new assets incrementally. For now, it's an internal tool only, which is why it's hosted on staging and you can’t get to the site without authenticating. 
+
+Come visit us in #18f-branding on slack for help with implementing these assets, questions, or to philosophize on the meaning of type.
 
 ## Assets available now:
 - Logo files
