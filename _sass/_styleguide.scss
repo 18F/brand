@@ -214,6 +214,11 @@ h2.styleguide-header {
 
 .styleguide-content {
   margin-bottom: 5em;
+
+  /* This can artificially increase the height of the page, but it also
+   * guarantees that the footer always "sticks" to the bottom of it. */
+  min-height: 100vh;
+
   max-width: $site-max-width;
   padding: {
     left: 2em;
