@@ -16,42 +16,14 @@ title: Visual style
 <p>Color palettes to use with Illustrator, Sketch, and Keynote</p>
 
 <div class="usa-grid-full usa-color-row usa-primary-color-section">
-  <div class="usa-color-square usa-color-white">
+  {% for color in site.data.palette %}
+  <div class="usa-color-square usa-color-{{ color.name }} {% cycle '', 'usa-mobile-end-row' %}">
     <div class="usa-color-inner-content">
-      <p class="usa-color-name">white</p>
-      <p class="usa-color-hex">#FFFFFF</p>
+      <p class="usa-color-name">{{ color.name }}</p>
+      <p class="usa-color-hex">{{ color.hex }}</p>
     </div>
   </div>
-  <div class="usa-color-square usa-color-light usa-mobile-end-row">
-    <div class="usa-color-inner-content">
-      <p class="usa-color-name">light</p>
-      <p class="usa-color-hex">#B3EFFF</p>
-    </div>
-  </div>
-  <div class="usa-color-square usa-color-bright">
-    <div class="usa-color-inner-content">
-      <p class="usa-color-name">bright</p>
-      <p class="usa-color-hex">#00CFFF</p>
-    </div>
-  </div>
-  <div class="usa-color-square usa-color-medium usa-mobile-end-row">
-    <div class="usa-color-inner-content">
-      <p class="usa-color-name">medium</p>
-      <p class="usa-color-hex">#046B99</p>
-    </div>
-  </div>
-  <div class="usa-color-square usa-color-dark">
-    <div class="usa-color-inner-content">
-      <p class="usa-color-name">dark</p>
-      <p class="usa-color-hex">#1C304A</p>
-    </div>
-  </div>
-  <div class="usa-color-square usa-color-black usa-mobile-end-row">
-    <div class="usa-color-inner-content">
-      <p class="usa-color-name">black</p>
-      <p class="usa-color-hex">#000000</p>
-    </div>
-  </div>
+  {% endfor %}
 </div>
 
 <br>
