@@ -25,11 +25,17 @@
       </td>
       {% for foreground in site.data.palette %}
       <td>
-        <div class="usa-matrix-square usa-color-{{ background.name }}">
+        {% assign ratio = foreground.hex | contrast_ratio with: background.hex %}
+        {% if ratio >= 4.5 %}
+        <div class="usa-matrix-square usa-color-{{ background.name }}"
+             title="The color ratio of {{ foreground.name }} on {{ background.name }} is about {{ ratio | floor }}:1.">
           <strong class="usa-matrix-foreground-{{ foreground.name }}">
             Aa
           </strong>
         </div>
+        {% else %}
+          NOPE
+        {% endif %}
       </td>
       {% endfor %}
     </tr>
