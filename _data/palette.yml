@@ -1,17 +1,17 @@
 - name: white
-  hex: '#FFFFFF'
+  hex: 'FFFFFF'
 
 - name: light
-  hex: '#B3EFFF'
+  hex: 'B3EFFF'
 
 - name: bright
-  hex: '#00CFFF'
+  hex: '00CFFF'
 
 - name: medium
-  hex: '#046B99'
+  hex: '046B99'
 
 - name: dark
-  hex: '#1C304A'
+  hex: '1C304A'
 
 - name: black
-  hex: '#000000'
+  hex: '000000'

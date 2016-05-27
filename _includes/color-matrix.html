@@ -5,7 +5,7 @@
       {% for foreground in site.data.palette %}
         <td scope="col">
           {{ foreground.name | capitalize }} text<br>
-          <small>{{ foreground.hex }}</small><br>
+          <small>#{{ foreground.hex }}</small><br>
           <strong class="usa-matrix-foreground-{{ foreground.name }}">
             Aa
           </strong>
@@ -21,7 +21,7 @@
       <td scope="row">
         <div class="usa-matrix-square usa-color-{{ background.name }}"></div>
         {{ background.name | capitalize }} background<br>
-        <small>{{ background.hex }}</small>
+        <small>#{{ background.hex }}</small>
       </td>
       {% for foreground in site.data.palette %}
       <td>
