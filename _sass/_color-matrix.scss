@@ -49,3 +49,24 @@ td[scope="row"] .usa-matrix-square {
     text-shadow: none;
   }
 }
+
+.usa-matrix-symbol-definitions {
+  display: none;
+}
+
+.usa-matrix-legend {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+  }
+
+  p {
+    margin-left: 45px;
+    font-size: 0.75em;
+  }
+}
