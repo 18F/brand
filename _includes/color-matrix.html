@@ -8,7 +8,7 @@
 <div class="usa-matrix-legend">
   <svg><use xlink:href="#usa-matrix-bad-contrast-ratio"/></svg>
 
-  <p>
+  <p class="usa-sr-invisible" aria-hidden="true">
     Please don't use these color combinations; they do not meet a color
     contrast ratio of 4.5:1, so they do not conform with the standards of
     Section 508 for body text. This means that some people would have
@@ -27,7 +27,7 @@
             {{ foreground.name | capitalize }} text<br>
             <small>#{{ foreground.hex }}</small><br>
           </div>
-          <strong class="usa-matrix-foreground-{{ foreground.name }}">
+          <strong class="usa-matrix-foreground-{{ foreground.name }} usa-sr-invisible" aria-hidden="true">
             Aa
           </strong>
         </td>
@@ -53,22 +53,27 @@
       {% if ratio >= 4.5 %}
       <td class="usa-matrix-valid-color-combo">
         <div class="usa-matrix-square usa-color-{{ background.name }}"
-             title="The contrast ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}.">
-          <strong class="usa-matrix-foreground-{{ foreground.name }}">
+             title="The contrast ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}."
+             role="presentation">
+          <strong class="usa-matrix-foreground-{{ foreground.name }} usa-sr-invisible" aria-hidden="true">
             Aa
           </strong>
         </div>
-        <aside>
+        <div class="usa-matrix-color-combo-description">
           <strong>{{ foreground.name | capitalize }}</strong> text on
           <strong>{{ background.name }}</strong> background
-        </aside>
+          <span class="usa-sr-only">is 508-compliant, with a contrast ratio of {{ ratio | human_readable_contrast_ratio }}.</span>
+        </div>
       </td>
       {% else %}
       <td class="usa-matrix-invalid-color-combo">
-        <div title="The contrast ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}, which does not conform with the standards of Section 508 for body text.">
+        <div title="The contrast ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}, which does not conform with the standards of Section 508 for body text." role="presentation">
           <svg class="usa-matrix-square">
             <use xlink:href="#usa-matrix-bad-contrast-ratio"/>
           </svg>
+        </div>
+        <div class="usa-sr-only">
+          Do not use {{ foreground.name }} text on {{ background.name }} background; it is not 508-compliant, with a contrast ratio of {{ ratio | human_readable_contrast_ratio }}.
         </div>
       </td>
       {% endif %}

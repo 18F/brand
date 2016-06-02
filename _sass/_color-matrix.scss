@@ -2,6 +2,25 @@
 // It's the equivalent of Bootstrap's "Medium" size.
 $marge-screen: 992px;
 
+// The WAI-ARIA specification states the following about aria-hidden:
+//
+//   Authors MAY, with caution, use aria-hidden to hide visibly rendered
+//   content from assistive technologies only if the act of hiding this
+//   content is intended to improve the experience for users of assistive
+//   technologies by removing redundant or extraneous content. Authors
+//   using aria-hidden to hide visible content from screen readers MUST
+//   ensure that identical or equivalent meaning and functionality is
+//   exposed to assistive technologies.
+//
+// Unfortunately, however, the U.S. Web Design Standards forcibly set
+// anything with aria-hidden to display: none, making it difficult to
+// address the above use case. The following rule allows us to override
+// this default and create content that is visible to sighted users but
+// irrelevant to non-sighted users.
+.usa-sr-invisible[aria-hidden="true"] {
+  display: block !important;
+}
+
 .usa-matrix-foreground-white {
   color: $color-white;
 
@@ -105,8 +124,8 @@ td[scope="row"] > div {
 }
 
 @media (min-width: $marge-screen) {
-  td.usa-matrix-valid-color-combo aside {
-    display: none;
+  .usa-matrix-color-combo-description {
+    @include sr-only();
   }
 }
 
@@ -132,7 +151,7 @@ td[scope="row"] > div {
           display: flex;
           align-items: center;
 
-          aside {
+          .usa-matrix-color-combo-description {
             flex: 1;
             padding-left: 1em;
           }
