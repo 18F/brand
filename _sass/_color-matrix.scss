@@ -1,3 +1,5 @@
+$marge-screen: 992px;
+
 .usa-matrix-foreground-white {
   color: $color-white;
 
@@ -27,11 +29,6 @@
 
 .usa-matrix-foreground-black {
   color: $color-black;
-}
-
-td[scope="row"] .usa-matrix-square {
-  float: left;
-  margin-right: 8px;
 }
 
 .usa-matrix td {
@@ -68,5 +65,61 @@ td[scope="row"] .usa-matrix-square {
   p {
     margin-left: 45px;
     font-size: 0.75em;
+  }
+}
+
+@media (min-width: $marge-screen) and (max-width: $large-screen) {
+  table th, table td {
+    padding: 0.5em;
+  }
+
+  .usa-matrix-desc {
+    font-size: 0.75em;
+  }
+}
+
+@media (min-width: $marge-screen) {
+  td.usa-matrix-valid-color-combo aside {
+    display: none;
+  }
+}
+
+@media (max-width: "#{$marge-screen - 1}") {
+  .usa-matrix-legend {
+    display: none;
+  }
+
+  table.usa-matrix {
+    display: block;
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      display: block;
+
+      tr {
+        display: block;
+
+        td.usa-matrix-valid-color-combo {
+          display: flex;
+          align-items: center;
+
+          aside {
+            flex: 1;
+            padding-left: 1em;
+          }
+        }
+
+        td.usa-matrix-invalid-color-combo {
+          display: none;
+        }
+
+        td[scope="row"] {
+          display: none;
+        }
+      }
+    }
   }
 }
