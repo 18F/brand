@@ -53,7 +53,7 @@
       {% if ratio >= 4.5 %}
       <td class="usa-matrix-valid-color-combo">
         <div class="usa-matrix-square usa-color-{{ background.name }}"
-             title="The color ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}.">
+             title="The contrast ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}.">
           <strong class="usa-matrix-foreground-{{ foreground.name }}">
             Aa
           </strong>
@@ -65,7 +65,7 @@
       </td>
       {% else %}
       <td class="usa-matrix-invalid-color-combo">
-        <div title="The color ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}, which does not conform with the standards of Section 508 for body text.">
+        <div title="The contrast ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}, which does not conform with the standards of Section 508 for body text.">
           <svg class="usa-matrix-square">
             <use xlink:href="#usa-matrix-bad-contrast-ratio"/>
           </svg>
