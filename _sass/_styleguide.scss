@@ -129,11 +129,16 @@ $site-top:           98px;
 // Main Content --------- //
 
 .main-content {
+  display: flex;
+  flex-direction: column;
+
   @include media($medium-screen) {
+    min-height: calc(100vh - #{$site-top});
     top: $site-top;
   }
   position: absolute;
   top: 4rem;
+  min-height: calc(100vh - 4rem);
   bottom: 0;
   right: 0;
   width: 100%;
@@ -213,6 +218,7 @@ h2.styleguide-header {
 // Styleguide Content -------- //
 
 .styleguide-content {
+  flex: 1;
   margin-bottom: 5em;
   max-width: $site-max-width;
   padding: {
@@ -239,6 +245,11 @@ h2.styleguide-header {
 
 .usa-styleguide-footer {
   background-color: $color-dark;;
+
+  // https://github.com/philipwalton/flexbugs#1-minimum-content-sizing-of-flex-items-not-honored
+  flex-shrink: 0;
+  flex-basis: auto;
+
   padding: {
     bottom: 3rem;
     top: 3rem;
