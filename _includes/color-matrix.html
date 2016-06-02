@@ -40,10 +40,12 @@
   {% for background in reversed_palette %}
     <tr>
       <td scope="row">
-        <div class="usa-matrix-square usa-color-{{ background.name }}"></div>
-        <div class="usa-matrix-desc">
-          {{ background.name | capitalize }} background<br>
-          <small>#{{ background.hex }}</small>
+        <div>
+          <div class="usa-matrix-square usa-color-{{ background.name }}"></div>
+          <div class="usa-matrix-desc">
+            {{ background.name | capitalize }} background<br>
+            <small>#{{ background.hex }}</small>
+          </div>
         </div>
       </td>
       {% for foreground in site.data.palette %}

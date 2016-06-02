@@ -70,13 +70,37 @@ $marge-screen: 992px;
   }
 }
 
-@media (min-width: $marge-screen) and (max-width: $large-screen) {
+td[scope="row"] > div {
+  display: flex;
+
+  .usa-matrix-desc {
+    flex: 1;
+  }
+}
+
+@media (min-width: $marge-screen) and (max-width: "#{$large-screen - 1}") {
   table th, table td {
     padding: 0.5em;
   }
 
   .usa-matrix-desc {
     font-size: 0.75em;
+  }
+
+  td[scope="row"] > div {
+    flex-direction: column;
+
+    .usa-matrix-desc {
+      padding-top: 0.5em;
+    }
+  }
+}
+
+@media (min-width: $large-screen) {
+  td[scope="row"] > div {
+    .usa-matrix-desc {
+      padding-left: 0.5em;
+    }
   }
 }
 
