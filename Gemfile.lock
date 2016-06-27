@@ -29,6 +29,7 @@ GEM
     rouge (1.10.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
+    wcag_color_contrast (0.0.1)
 
 PLATFORMS
   ruby
@@ -36,6 +37,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.1.6)
   redcarpet (= 3.3.3)
+  wcag_color_contrast (= 0.0.1)
 
 BUNDLED WITH
    1.12.4
