@@ -3,37 +3,24 @@
 <aside class="sidenav" id="menu-content">
   <nav>
     <ul class="usa-sidenav-list">
-      <li> 
+      <li>
         <a {% if page.url == "/" %}class="usa-current"{% endif %} href="{{ site.baseurl }}/">Introduction</a>
       </li>
       <li>
-        <a {% if current[1] == 'visual-style' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/visual-style/">Visual style</a>
-        <ul class="usa-sidenav-sub_list visual-style-sublist">
-          <li>
-            <a href="#logo">Logo</a>
-          </li>
-          <li>
-            <a href="#colors">Color palette</a>
-          </li>
-          <li>
-            <a href="#typography">Typography</a>
-          </li>
-        </ul>
+        <a {% if current[1] == 'logo' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/logo/">Logo</a>
       </li>
       <li>
-        <a {% if current[1] == 'resources' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/resources/">Resources</a>
-        <ul class="usa-sidenav-sub_list visual-style-sublist">
-          <li>
-            <a href="#instructions">Instructions</a>
-          </li>
-          <li>
-            <a href="#slides">Slide templates</a>
-          </li>
-          <li>
-            <a href="#desktop">Desktop art</a>
-          </li>
-        </ul>
-      </li> 
+        <a {% if current[1] == 'color-palette' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/color-palette/">Color palette</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'typography' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/typography/">Typography</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'presentation-themes' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/presentation-themes/">Presentation <br>themes</a>
+      </li>
+      <li>
+        <a {% if current[1] == 'desktop-art' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/desktop-art/">Desktop art</a>
+      </li>
     </ul>
   </nav>
 </aside>
