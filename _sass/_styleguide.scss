@@ -41,11 +41,15 @@ $site-top:           98px;
       width: 70%;
 
       a {
-        color: $color-dark;;
+        color: $color-dark;
 
         &:hover {
           color: $color-gray-dark;
           text-decoration: none;
+        }
+
+        &:visited {
+          color: $color-dark;
         }
       }
 
@@ -448,6 +452,10 @@ a {
 
   &:hover {
     text-decoration: none;
+  }
+
+  &:visited {
+    color: $color-medium;
   }
 }
 
