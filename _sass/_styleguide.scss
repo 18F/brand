@@ -200,6 +200,7 @@ h2.styleguide-header {
 
   a {
     color: $color-medium;
+    text-decoration: none;
 
     &:hover {
       color: $color-medium;
@@ -443,6 +444,11 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: $color-medium;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .usa-sidenav-list {
