@@ -1,22 +1,7 @@
 # 18F Brand
-This is the home of 18F's evolving brand assets and style guide. It's a work in progress, and we are releasing new assets incrementally. For now, it's an internal tool only, which is why it's hosted on staging and you can’t get to the site without authenticating. 
+This is the home of 18F's evolving brand assets and style guide. It's a work in progress, and we are releasing new assets as we are able.
 
-Come visit us in #18f-branding on slack for help with implementing these assets, questions, or to philosophize on the meaning of type.
-
-## Assets available now:
-- Logo files
-- Favicon files
-- Color palette and preliminary text/background color guidance to conform with 508 standards.
-- 18F Nimbus font files
-- Keynote template and example presentation
- - Including a compatible version for Keynote 6.5, for users with OS X Yosemite,  and  version for Keynote 6.6, for users with El Capitan
-- Google Slides template and instructions on how to install the custom theme
-- Desktop art
-
-## Coming soon:
-- More templates (Google slides, Good docs, & many more)
-- Better guidance on how to use colors, fonts, logos, and other design assets
-- and more! We're adapting to our team's needs as we go, so if there's something you'd like to see us build or offer guidance on, file an issue in this repository.
+Come visit us in [#18f-branding](https://18f.slack.com/archives/18f-branding) on slack for help with implementing these assets, questions, or to philosophize on the meaning of type.
 
 ## Contributing
 
