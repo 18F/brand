@@ -448,6 +448,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-sans;
 }
 
+//  rewrote this to prevent overlapping margins
+
+h4 {
+  margin-top: 0;
+  padding-top: 1.5em;
+}
+
 a {
   color: $color-medium;
   text-decoration: underline;
@@ -488,7 +495,7 @@ a {
     margin-top: 0;
   }
 }
-.typography-sans-intro {
+.typography-specimen {
   .text-huge {
     font-size: 140px;
     line-height: 1.05;
@@ -497,13 +504,7 @@ a {
     font-size: 15px;
   }
 }
-.typography-serif-intro {
-  .text-huge {
-    font-size: 120px;
-    line-height: 1.275;
-  }
-  .text-tiny {
-    font-size: 13px;
-  }
-}
 
+.bold {
+  font-weight: bold; 
+}
