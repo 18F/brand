@@ -479,3 +479,31 @@ a {
 .display-logo {
   max-width: 162px;
 }
+
+// added from USWDS for typography section
+
+.text-tiny {
+  @include margin(5px null 0);
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.typography-sans-intro {
+  .text-huge {
+    font-size: 140px;
+    line-height: 1.05;
+  }
+  .text-tiny {
+    font-size: 15px;
+  }
+}
+.typography-serif-intro {
+  .text-huge {
+    font-size: 120px;
+    line-height: 1.275;
+  }
+  .text-tiny {
+    font-size: 13px;
+  }
+}
+
