@@ -448,6 +448,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-sans;
 }
 
+//  rewrote this to prevent overlapping margins
+
+h4 {
+  margin-top: 0;
+  padding-top: 1.5em;
+}
+
 a {
   color: $color-medium;
   text-decoration: underline;
@@ -478,4 +485,26 @@ a {
 
 .display-logo {
   max-width: 162px;
+}
+
+// added from USWDS for typography section
+
+.text-tiny {
+  @include margin(5px null 0);
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.typography-specimen {
+  .text-huge {
+    font-size: 140px;
+    line-height: 1.05;
+  }
+  .text-tiny {
+    font-size: 15px;
+  }
+}
+
+.bold {
+  font-weight: bold; 
 }
