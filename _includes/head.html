@@ -11,26 +11,26 @@
 ================================================== -->
 {% if page.title %}
   <title>{{ site.name }} | {{ page.title }}</title>
-  <meta property="og:title" content="{{ site.name | xml_escape }} | {{ page.title | xml_escape }}" />
+  <meta property="og:title" content="{{ site.name | xml_escape }} | {{ page.title | xml_escape }}">
 {% else %}
   <title>{{ site.name }} | {{ site.title }}</title>
-  <meta property="og:title" content="{{ site.name | xml_escape }} | {{ site.title | xml_escape }}" />
+  <meta property="og:title" content="{{ site.name | xml_escape }} | {{ site.title | xml_escape }}">
 {% endif %}
 
 {% if page.description %}
   <meta name="description" content="{{ page.description | xml_escape }}">
-  <meta property="og:description" content="{{ page.description | xml_escape }}" />
+  <meta property="og:description" content="{{ page.description | xml_escape }}">
 {% else %}
   <meta name="description" content="{{ site.description | xml_escape }}">
-  <meta property="og:description" content="{{ site.description | xml_escape }}" />
+  <meta property="og:description" content="{{ site.description | xml_escape }}">
 {% endif %}
 
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
   <!-- Favicons -->
-  <link rel="shortcut icon" type="image/ico" href="{{ site.url }}{{ site.baseurl }}/assets/img/favicon.ico" />
-  <link rel="icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}/assets/img/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}/assets/img/favicon-16x16.png" sizes="16x16" />
+  <link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}/assets/img/favicon.ico">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon-16x16.png" sizes="16x16">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
