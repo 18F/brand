@@ -1,5 +1,5 @@
 {
-  "name": "18F Brand Guidelines",
+  "name": "@18f/brand",
   "homepage": "https://pages.18f.gov/brand/",
   "scripts": {
     "preinstall": "bundle",
