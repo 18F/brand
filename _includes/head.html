@@ -1,10 +1,8 @@
-<!-- Basic Page Needs
-================================================== -->
+  <!-- Basic Page Needs -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<!-- Mobile Specific Metas
-================================================== -->
+  <!-- Mobile Specific Metas -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,32 +11,26 @@
 ================================================== -->
 {% if page.title %}
   <title>{{ site.name }} | {{ page.title }}</title>
-  <meta property="og:title" content="{{ site.name | xml_escape }} | {{ page.title | xml_escape }}" />
+  <meta property="og:title" content="{{ site.name | xml_escape }} | {{ page.title | xml_escape }}">
 {% else %}
   <title>{{ site.name }} | {{ site.title }}</title>
-  <meta property="og:title" content="{{ site.name | xml_escape }} | {{ site.title | xml_escape }}" />
+  <meta property="og:title" content="{{ site.name | xml_escape }} | {{ site.title | xml_escape }}">
 {% endif %}
 
 {% if page.description %}
   <meta name="description" content="{{ page.description | xml_escape }}">
-  <meta property="og:description" content="{{ page.description | xml_escape }}" />
+  <meta property="og:description" content="{{ page.description | xml_escape }}">
 {% else %}
   <meta name="description" content="{{ site.description | xml_escape }}">
-  <meta property="og:description" content="{{ site.description | xml_escape }}" />
+  <meta property="og:description" content="{{ site.description | xml_escape }}">
 {% endif %}
 
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
-<!--[if lt IE 9]>
-  <script src="{{ site.baseurl }}/web-design-standards/assets/js/vendor/html5shiv.js"></script>
-<![endif]-->
+  <!-- Favicons -->
+  <link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}/assets/img/favicon.ico">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon-16x16.png" sizes="16x16">
 
-<!-- Favicons
-================================================== -->
-  <link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}/assets/img/favicon.ico" />
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicon-16x16.png" sizes="16x16" />
-
-<!-- CSS
-================================================== -->
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
