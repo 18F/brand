@@ -1,0 +1,43 @@
+---
+---
+
+@import 'variables';
+
+// Vendor -------------- //
+
+@import 'uswds/lib/bourbon';
+@import 'uswds/lib/neat';
+@import 'uswds/lib/normalize';
+
+
+// Core -------------- //
+
+@import 'uswds/core/grid-settings';
+@import 'uswds/core/defaults';
+// @import 'uswds/core/variables';
+@import 'uswds/core/base';
+@import 'uswds/core/grid';
+@import 'uswds/core/utilities';
+// @import 'uswds/core/fonts';
+
+
+// Elements -------------- //
+// Styles basic html elements
+
+@import 'uswds/elements/typography';
+@import 'uswds/elements/list';
+@import 'uswds/elements/inputs';
+@import 'uswds/elements/buttons';
+@import 'uswds/elements/table';
+@import 'uswds/elements/figure';
+@import 'uswds/elements/labels';
+
+
+// Components -------------- //
+
+@import 'uswds/components/sidenav';
+
+// Custom styles ---------- //
+
+@import 'styleguide';
+@import 'color-matrix';

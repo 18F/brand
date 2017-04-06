@@ -1,0 +1,13 @@
+name: 18F Visual Identity
+
+repo:
+- name: 18F Visual Identity
+  description: Main repository for 18F's visual identity resources
+  url: https://github.com/18F/brand
+
+exclude:
+- README.md
+- LICENSE.md
+
+sass:
+  style: nested
