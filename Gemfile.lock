@@ -39,5 +39,8 @@ DEPENDENCIES
   redcarpet (= 3.3.3)
   wcag_color_contrast (= 0.0.1)
 
+RUBY VERSION
+   ruby 2.6.0p0
+
 BUNDLED WITH
-   1.12.4
+   1.17.2
