@@ -9,8 +9,8 @@ Come visit us in [#18f-branding](https://18f.slack.com/archives/18f-branding) on
 You should just be able to copy and paste each of the following steps to get the brand site up and running.
 
 0. `git clone git@github.com:18F/brand.git && cd brand`
-0. `npm install`
-0. `npm start`
+0. `bundle install`
+0. `bundle exec jekyll serve`
 0. You should be able to see the branding site at [http://127.0.0.1:4000](127.0.0.1:4000)
 
 ### Making changes

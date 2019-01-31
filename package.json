@@ -1,9 +1,0 @@
-{
-  "name": "@18f/brand",
-  "homepage": "https://pages.18f.gov/brand/",
-  "scripts": {
-    "preinstall": "bundle",
-    "start": "bundle exec jekyll serve",
-    "build": "bundle exec jekyll build"
-  }
-}

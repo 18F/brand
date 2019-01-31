@@ -8,6 +8,7 @@ repo:
 exclude:
 - README.md
 - LICENSE.md
+- vendor
 
 sass:
   style: nested
