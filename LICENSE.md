@@ -28,3 +28,6 @@ Unless expressly stated otherwise, the person who associated a work with this de
 ### Files licensed under the Creative Commons Zero License
 
 The [desktop art](https://brand.18f.gov/desktop-art/) images are from [Unsplash](https://unsplash.com/), and licensed under the [Creative Commons Zero License](https://creativecommons.org/publicdomain/zero/1.0/). Credit to the photographers and the original images are listed on the [desktop art page](https://brand.18f.gov/desktop-art/).
+
+### Files licensed under the MIT License
+Feather Icons is an open source icon set [licensed under an MIT License](https://github.com/feathericons/feather/blob/master/LICENSE), with copyright belonging to Cole Bemis.</p>
