@@ -4,3 +4,4 @@ _site/
 .DS_Store
 npm-debug.log
 vendor/bundle
+.jekyll-cache/
