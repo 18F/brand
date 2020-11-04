@@ -1,0 +1,61 @@
+# _data/navigation.yml
+primary:
+  - text: Introduction
+    href: /
+  - text: Logo
+    href: /logo/
+  - text: Color Palette
+    href: /color-palette/
+  - text: Typography
+    href: /typography/
+  - text: Icons
+    href: /icons/
+  - text: Templates
+    href: /templates/
+  - text: Desktop Art
+    href: /desktop-art/
+  - text: Principles
+    href: /principles/
+
+#
+# overview:
+#   - text: About this guide
+#     href: /
+#   - text: License
+#     href: /license/
+#   - text: Resources
+#     href: /resources/
+#
+# our-approach:
+#   - text: Values and principles
+#     href: /our-approach/values-and-principles/
+#   - text: Defining design
+#     href: /our-approach/defining-design/
+#   - text: Stay lean
+#     href: /our-approach/stay-lean/
+#   - text: Meet partners where they are
+#     href: /our-approach/meet-partners-where-they-are/
+#
+# research:
+#   - text: Clarify the basics
+#     href: /research/clarify-the-basics/
+#   - text: Plan
+#     href: /research/plan/
+#   - text: Do
+#     href: /research/do/
+#   - text: Make research actionable
+#     href: /research/make-research-actionable/
+#   - text: Legal
+#     href: /research/legal/
+#   - text: Privacy
+#     href: /research/privacy/
+#   - text: Bias
+#     href: /research/bias/
+#   - text: Ethics
+#     href: /research/ethics/
+#
+# design:
+#   - text: Build a prototype
+#     href: /design/build-a-prototype/
+#   - text: Use a design system
+#     href: /design/use-a-design-system/
