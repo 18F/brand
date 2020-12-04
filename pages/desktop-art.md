@@ -19,5 +19,5 @@ A variety of wallpaper images for MacBooks and Apple Displays.
 #### Image credits
 * Flag, [Eric Duvauchelle](https://unsplash.com/photos/xn4Lc-87_fM)
 * Sky, [Tumprins](http://tumblr.unsplash.com/post/54230079634/download-tumprins)
-* Statue of Liberty, Anthony Delanoix](https://unsplash.com/photos/ciJJ57qsQLs)
+* Statue of Liberty, [Anthony Delanoix](https://unsplash.com/photos/ciJJ57qsQLs)
 * Highway, [Israel Sundseth](https://unsplash.com/photos/BYu8ITUWMfc/)
