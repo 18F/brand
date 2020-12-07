@@ -22,7 +22,7 @@ For Adobe, Sketch, and Mac applications
 <br>
 
 
-<h2>Guidelines</h2>
-<p><strong>Do</strong> use the 18F brand colors in combinations that conform with accessibility standards. Each of these combinations meets or exceeds a contrast ratio of 4.5:1, and is approved for body and headline text. For more details on color contrast, read the <a href="https://pages.18f.gov/accessibility/">18F Accessibility Guide</a>.</p>
+## Guidelines
+**Do** use the 18F brand colors in combinations that conform with accessibility standards. Each of these combinations meets or exceeds a contrast ratio of 4.5:1, and is approved for body and headline text. For more details on color contrast, read the [18F Accessibility Guide](https://pages.18f.gov/accessibility/).
 
 {% include color-matrix.html %}

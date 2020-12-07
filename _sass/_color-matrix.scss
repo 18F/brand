@@ -29,7 +29,7 @@
   margin-bottom: 1rem;
 }
 
-//// color palette preview
+//// color palette display
 
 .usa-color-name {
   font-weight: bold;
@@ -161,24 +161,29 @@ td[scope="row"] > div {
   }
 }
 
-// @media (min-width: $marge-screen) and (max-width: "#{$large-screen - 1}")
-@include at-media(mobile)  {
-  table th, table td {
-    padding: 0.5em;
-  }
-
-  .usa-matrix-desc {
-    font-size: 0.75em;
-  }
-
-  td[scope="row"] > div {
-    flex-direction: column;
-
-    .usa-matrix-desc {
-      padding-top: 0.5em;
-    }
-  }
+.usa-matrix p {
+  font-size: 0.75em;
 }
+
+
+// @media (min-width: $marge-screen) and (max-width: "#{$large-screen - 1}")
+// @include at-media(mobile)  {
+//   table th, table td {
+//     padding: 0.5em;
+//   }
+//
+//   .usa-matrix-desc {
+//     font-size: 0.75em;
+//   }
+//
+//   td[scope="row"] > div {
+//     flex-direction: column;
+//
+//     .usa-matrix-desc {
+//       padding-top: 0.5em;
+//     }
+//   }
+// }
 
 // @include at-media(tablet) {
 //   td[scope="row"] > div {
@@ -194,43 +199,45 @@ td[scope="row"] > div {
 //   }
 // }
 
-@include at-media(mobile) {
-  .usa-matrix-legend {
-    display: none;
-  }
+// mobile one-col styles
 
-  table.usa-matrix {
-    display: block;
-
-    thead {
-      display: none;
-    }
-
-    tbody {
-      display: block;
-
-      tr {
-        display: block;
-
-        td.usa-matrix-valid-color-combo,
-        td.usa-matrix-invalid-color-combo, {
-          display: flex;
-          align-items: center;
-
-          .usa-matrix-color-combo-description {
-            flex: 1;
-            padding-left: 1em;
-          }
-        }
-
-        // td.usa-matrix-invalid-color-combo {
-        //   display: none;
-        // }
-
-        td[scope="row"] {
-          display: none;
-        }
-      }
-    }
-  }
-}
+// @include at-media(mobile) {
+//   .usa-matrix-legend {
+//     display: none;
+//   }
+//
+//   table.usa-matrix {
+//     display: block;
+//
+//     thead {
+//       display: none;
+//     }
+//
+//     tbody {
+//       display: block;
+//
+//       tr {
+//         display: block;
+//
+//         td.usa-matrix-valid-color-combo,
+//         td.usa-matrix-invalid-color-combo, {
+//           display: flex;
+//           align-items: center;
+//
+//           .usa-matrix-color-combo-description {
+//             flex: 1;
+//             padding-left: 1em;
+//           }
+//         }
+//
+//         // td.usa-matrix-invalid-color-combo {
+//         //   display: none;
+//         // }
+//
+//         td[scope="row"] {
+//           display: none;
+//         }
+//       }
+//     }
+//   }
+// }

@@ -16,7 +16,6 @@
 <table class="usa-table-borderless usa-matrix">
   <thead>
     <tr>
-      <td scope="col"></td>
       {% for foreground in site.data.palette %}
         <td scope="col">
           <div class="usa-matrix-desc">
@@ -35,7 +34,7 @@
   {% assign reversed_palette = site.data.palette | reverse %}
   {% for background in reversed_palette %}
     <tr>
-      <td scope="row">
+      <!-- <td scope="row">
         <div>
           <div class="usa-matrix-square usa-color-{{ background.name }}"></div>
           <div class="usa-matrix-desc">
@@ -43,7 +42,7 @@
             <small>#{{ background.hex }}</small>
           </div>
         </div>
-      </td>
+      </td> -->
       {% for foreground in site.data.palette %}
       {% assign ratio = foreground.hex | contrast_ratio with: background.hex %}
       {% if ratio >= 4.5 %}
@@ -56,8 +55,7 @@
           </strong>
         </div>
         <div class="usa-matrix-color-combo-description">
-          <strong>{{ foreground.name | capitalize }}</strong> text on
-          <strong>{{ background.name }}</strong> background
+          <p><strong>{{ foreground.name | capitalize }}</strong> text on <strong>{{ background.name }}</strong> background</p>
           <span class="usa-sr-only">is 508-compliant, with a contrast ratio of {{ ratio | human_readable_contrast_ratio }}.</span>
         </div>
       </td>
@@ -73,7 +71,6 @@
         </div>
       </td>
       {% endif %}
-      </td>
       {% endfor %}
     </tr>
   {% endfor %}
