@@ -1,170 +1,135 @@
-// "Marge" is a cross between USWDS's "Medium" and "Large" breakpoints.
-// It's the equivalent of Bootstrap's "Medium" size.
-$marge-screen: 992px;
+//// fix these Variables
+$color-white: #fff;
+$large-screen: 1200px;
+$medium-screen: 600px;
 
-// The WAI-ARIA specification states the following about aria-hidden:
-//
-//   Authors MAY, with caution, use aria-hidden to hide visibly rendered
-//   content from assistive technologies only if the act of hiding this
-//   content is intended to improve the experience for users of assistive
-//   technologies by removing redundant or extraneous content. Authors
-//   using aria-hidden to hide visible content from screen readers MUST
-//   ensure that identical or equivalent meaning and functionality is
-//   exposed to assistive technologies.
-//
-// Unfortunately, however, the U.S. Web Design Standards forcibly set
-// anything with aria-hidden to display: none, making it difficult to
-// address the above use case. The following rule allows us to override
-// this default and create content that is visible to sighted users but
-// irrelevant to non-sighted users.
-.usa-sr-invisible[aria-hidden="true"] {
-  display: block !important;
-}
-
-.usa-matrix-foreground-white {
-  color: $color-white;
-
-  // https://css-tricks.com/adding-stroke-to-web-text/
-  text-shadow:
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-}
-
-.usa-matrix-foreground-light {
-  color: $color-light;
-}
-
-.usa-matrix-foreground-bright {
-  color: $color-bright;
-}
-
-.usa-matrix-foreground-medium {
-  color: $color-medium;
-}
-
-.usa-matrix-foreground-dark {
-  color: $color-dark;
-}
-
-.usa-matrix-foreground-black {
-  color: $color-black;
-}
-
-.usa-matrix td {
-  vertical-align: top;
-}
-
-.usa-matrix-square {
-  width: 4em;
-  height: 4em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  strong {
-    text-shadow: none;
+//// from current site utilities
+// Mobile-first media query helper
+@mixin media($bp) {
+  @media screen and (min-width: #{$bp}) {
+    @content;
   }
 }
 
-.usa-matrix-symbol-definitions {
-  display: none;
+// background color helpers
+.usa-color-white {
+  background-color: $color-white;
+  box-shadow: inset 0 0 0 1px $color-gray-divider;
 }
 
-.usa-matrix-legend {
-  position: relative;
+.usa-color-light {
+  background-color: $color-light;
+}
 
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 35px;
-    height: 35px;
-  }
+.usa-color-bright {
+  background-color: $color-bright;
+}
 
-  p {
-    margin-left: 45px;
-    font-size: 0.75em;
+.usa-color-medium {
+  background-color: $color-medium;
+}
+
+.usa-color-dark {
+  background-color: $color-dark;
+}
+
+.usa-color-black {
+  background-color: $color-black;
+}
+
+.usa-color-short {
+  height: 7rem;
+  margin-bottom: 1rem;
+}
+
+/// color palette preview
+
+.usa-color-name {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+.usa-color-hex {
+  margin-bottom: 1em;
+  margin-top: 0;
+
+  @include media($medium-screen) {
+    margin: 0;
   }
 }
 
-td[scope="row"] > div {
-  display: flex;
+.usa-color-row {
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
 
-  .usa-matrix-desc {
-    flex: 1;
-  }
+  // .color-big {
+  //   @include media($medium-screen) {
+  //     float: left;
+  //     padding-right: 4%;
+  //     width: 32%;
+  //   }
+  // }
+  //
+  // .color-small {
+  //   float: left;
+  //   width: 50%;
+  //
+  //   @include media($medium-screen) {
+  //     width: 17%;
+  //   }
+  //   margin-right: 0;
+  // }
 }
 
-@media (min-width: $marge-screen) and (max-width: "#{$large-screen - 1}") {
-  table th, table td {
-    padding: 0.5em;
+.usa-primary-color-section {
+  @include media($medium-screen) {
+    margin-bottom: 8rem;
+  }
+  margin-bottom: 0;
+
+  .usa-color-square {
+    @include grid-col(4);
+    margin-bottom: 7rem;
+    padding-bottom: 50%;
+    position: relative;
+
+    @include at-media(tablet) {
+      float: left;
+      width: 14.66%;
+      margin-right: 2%;
+      margin-bottom: 0;
+      padding-bottom: 14.70196%;
+    }
   }
 
-  .usa-matrix-desc {
-    font-size: 0.75em;
-  }
-
-  td[scope="row"] > div {
-    flex-direction: column;
-
-    .usa-matrix-desc {
-      padding-top: 0.5em;
+  .usa-mobile-end-row {
+    @include at-media(mobile-lg) {
+      // margin-right: 2.35765%;
+      // border: 10px solid red;
     }
   }
 }
 
-@media (min-width: $large-screen) {
-  td[scope="row"] > div {
-    .usa-matrix-desc {
-      padding-left: 0.5em;
-    }
+.usa-color-inner-content {
+  position: absolute;
+  top: 100%;
+}
+
+.usa-color-text {
+  font-weight: bold;
+  margin-bottom: .4rem;
+  padding: {
+    bottom: 1rem;
+    left: 2rem;
+    right: 2rem;
+    top: 1rem;
   }
 }
 
-@media (min-width: $marge-screen) {
-  .usa-matrix-color-combo-description {
-    @include sr-only();
-  }
-}
-
-@media (max-width: "#{$marge-screen - 1}") {
-  .usa-matrix-legend {
-    display: none;
-  }
-
-  table.usa-matrix {
-    display: block;
-
-    thead {
-      display: none;
-    }
-
-    tbody {
-      display: block;
-
-      tr {
-        display: block;
-
-        td.usa-matrix-valid-color-combo {
-          display: flex;
-          align-items: center;
-
-          .usa-matrix-color-combo-description {
-            flex: 1;
-            padding-left: 1em;
-          }
-        }
-
-        td.usa-matrix-invalid-color-combo {
-          display: none;
-        }
-
-        td[scope="row"] {
-          display: none;
-        }
-      }
-    }
+.usa-color-outline {
+  .usa-color-text {
+    box-shadow: inset 0 0 0 1px $color-gray-divider;
   }
 }

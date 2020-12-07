@@ -1,11 +1,12 @@
 ---
-permalink: /color-palette-old/
-layout: default
+permalink: /color-palette/
+layout: post
 title: Color palette
 ---
 
-<p>For Adobe, Sketch, and Mac applications</p>
-<a class="usa-button usa-button-gray" href="{{ site.baseurl }}/assets/dist/18F_Color_Palette.zip">Download color palettes</a>
+For Adobe, Sketch, and Mac applications
+
+[Download color palettes]({{ site.baseurl }}/assets/dist/18F_Color_Palette.zip){:.usa-button }
 
 <div class="usa-grid-full usa-color-row usa-primary-color-section">
   {% for color in site.data.palette %}

@@ -3,7 +3,8 @@
 
 // Color
 $color-light:        color("cyan-10v");
-$color-bright:       color("cyan-30v");
+// $color-bright:       color("cyan-30v");
+$color-bright:       #00cfff;
 $color-medium:       color("primary");
 $color-dark:         color("primary-dark");
 $color-base:         color("primary-dark");
@@ -197,3 +198,4 @@ a[href^="https://gsa-tts.slack.com"]::before {
 }
 
 @import '_usa_anchor';
+@import '_color-matrix';
