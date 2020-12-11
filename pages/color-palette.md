@@ -1,6 +1,7 @@
 ---
+id: color-palette
 permalink: /color-palette/
-layout: post
+layout: wide
 title: Color palette
 ---
 
