@@ -116,8 +116,10 @@
   color: $color-black;
 }
 
-.usa-matrix td {
-  vertical-align: top;
+.usa-matrix-row {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 6em;
 }
 
 .usa-matrix-preview {
@@ -127,7 +129,6 @@
   justify-content: center;
   align-items: center;
   float: left;
-  margin-top: 1em;
 
   strong {
     text-shadow: none;
@@ -136,8 +137,6 @@
 
 .usa-matrix-preview--text {
   margin-left: 7em;
-  margin-bottom: 2em;
-  margin-top: 2em;
 
   p {
     margin-top: 0;
