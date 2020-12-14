@@ -120,17 +120,80 @@
   vertical-align: top;
 }
 
-.usa-matrix-square {
-  width: 4em;
-  height: 4em;
+.usa-matrix-preview {
+  width: 6em;
+  height: 6em;
   display: flex;
   justify-content: center;
   align-items: center;
+  float: left;
+  margin-top: 1em;
 
   strong {
     text-shadow: none;
   }
 }
+
+.usa-matrix-preview--text {
+  margin-left: 7em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+}
+
+.usa-matrix-hexbox::before {
+  content: '';
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  margin-right: 0.25em;
+  margin-left: 0.25em;
+}
+
+.usa-matrix-hexbox--white::before {
+  @extend .usa-color-white;
+}
+
+.usa-matrix-hexbox--light::before {
+  @extend .usa-color-light;
+}
+
+.usa-matrix-hexbox--bright::before {
+  @extend .usa-color-bright;
+}
+
+.usa-matrix-hexbox--medium::before {
+  @extend .usa-color-medium;
+}
+
+.usa-matrix-hexbox--dark::before {
+  @extend .usa-color-dark;
+}
+
+.usa-matrix-hexbox--black::before {
+  @extend .usa-color-black;
+}
+
+hr {
+  border: 1px solid $color-gray-lightest;
+}
+
+// .usa-matrix-square {
+//   width: 4em;
+//   height: 4em;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//
+//   strong {
+//     text-shadow: none;
+//   }
+// }
 
 .usa-matrix-symbol-definitions {
   display: none;
