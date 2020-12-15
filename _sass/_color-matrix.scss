@@ -79,10 +79,32 @@
   top: 100%;
 }
 
+//// color matrix legend
+.usa-matrix-legend {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+  }
+
+  p {
+    margin-left: 45px;
+    font-size: 0.75em;
+  }
+}
+
 //// color matrix
 
-.usa-sr-invisible[aria-hidden="true"] {
-  display: block !important;
+// .usa-sr-invisible[aria-hidden="true"] {
+//   display: block !important;
+// }
+
+.usa-matrix-row {
+  margin-bottom: 2em;
 }
 
 .usa-matrix-foreground-white {
@@ -116,29 +138,56 @@
   color: $color-black;
 }
 
+// .usa-matrix h2 {
+//   margin-top: 2em;
+//   display: block;
+//   width: 100%;
+// }
+
 .usa-matrix-column {
-  float:left;
-  width: 20%;
-  margin-top: 1em;
-  margin-bottom: 2em;
-  padding-right: 0.5em;
+  width: 50%;
+  float: left;
+  min-height: 286px;
+  padding-right: 1.5em;
+
+  @include at-media(tablet) {
+    min-height: auto;
+    width: 20%;
+    padding-right: 0.5em;
+  }
 
   p {
-    font-size: 0.8em;
+    margin-top: 0;
+    @include at-media(tablet) {
+      margin-bottom: 0.8em;
+      font-size: 0.8em;
+    }
   }
 }
 
 .usa-matrix-preview {
-  width: 5em;
-  height: 5em;
+  width: 7em;
+  height: 7em;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0.8em;
+
+  @include at-media(tablet) {
+    width: 6em;
+    height: 6em;
+  }
 
   strong {
     text-shadow: none;
   }
 }
+
+.usa-matrix-preview--text {
+  padding-right: 10%;
+}
+
+//// inline hexbox previews
 
 .usa-matrix-hexbox::before {
   content: '';
@@ -173,132 +222,6 @@
   @extend .usa-color-black;
 }
 
-hr {
-  border: 1px solid $color-gray-lightest;
-}
-
-// .usa-matrix-square {
-//   width: 4em;
-//   height: 4em;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//
-//   strong {
-//     text-shadow: none;
-//   }
-// }
-
 .usa-matrix-symbol-definitions {
   display: none;
 }
-
-.usa-matrix-legend {
-  position: relative;
-
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 35px;
-    height: 35px;
-  }
-
-  p {
-    margin-left: 45px;
-    font-size: 0.75em;
-  }
-}
-
-td[scope="row"] > div {
-  display: flex;
-
-  .usa-matrix-desc {
-    flex: 1;
-  }
-}
-
-.usa-matrix p {
-  font-size: 0.75em;
-}
-
-.usa-matrix-desc {
-    font-size: 0.75em;
-  }
-
-
-// @media (min-width: $marge-screen) and (max-width: "#{$large-screen - 1}")
-// @include at-media(mobile)  {
-//   table th, table td {
-//     padding: 0.5em;
-//   }
-//
-//   .usa-matrix-desc {
-//     font-size: 0.75em;
-//   }
-//
-//   td[scope="row"] > div {
-//     flex-direction: column;
-//
-//     .usa-matrix-desc {
-//       padding-top: 0.5em;
-//     }
-//   }
-// }
-
-// @include at-media(tablet) {
-//   td[scope="row"] > div {
-//     .usa-matrix-desc {
-//       padding-left: 0.5em;
-//     }
-//   }
-// }
-
-// @include at-media(tablet) {
-//   .usa-matrix-color-combo-description {
-//     // @include sr-only();
-//   }
-// }
-
-// mobile one-col styles
-
-// @include at-media(mobile) {
-//   .usa-matrix-legend {
-//     display: none;
-//   }
-//
-//   table.usa-matrix {
-//     display: block;
-//
-//     thead {
-//       display: none;
-//     }
-//
-//     tbody {
-//       display: block;
-//
-//       tr {
-//         display: block;
-//
-//         td.usa-matrix-valid-color-combo,
-//         td.usa-matrix-invalid-color-combo, {
-//           display: flex;
-//           align-items: center;
-//
-//           .usa-matrix-color-combo-description {
-//             flex: 1;
-//             padding-left: 1em;
-//           }
-//         }
-//
-//         // td.usa-matrix-invalid-color-combo {
-//         //   display: none;
-//         // }
-//
-//         td[scope="row"] {
-//           display: none;
-//         }
-//       }
-//     }
-//   }
-// }
