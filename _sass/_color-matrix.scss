@@ -1,56 +1,54 @@
-//// background color helpers
-.usa-color-white {
+//// color helpers
+.background-color--white {
   background-color: $color-white;
   box-shadow: inset 0 0 0 1px $color-gray-divider;
 }
 
-.usa-color-light {
+.background-color--light {
   background-color: $color-light;
 }
 
-.usa-color-bright {
+.background-color--bright {
   background-color: $color-bright;
 }
 
-.usa-color-medium {
+.background-color--medium {
   background-color: $color-medium;
 }
 
-.usa-color-dark {
+.background-color--dark {
   background-color: $color-dark;
 }
 
-.usa-color-black {
+.background-color--black {
   background-color: $color-black;
 }
 
-.usa-color-short {
-  height: 7rem;
-  margin-bottom: 1rem;
+p.text-color--light {
+  color: $color-light;
 }
 
-//// color palette display
-
-.usa-color-name {
-  font-weight: bold;
-  margin-bottom: 0;
-  margin-top: 1rem;
-  text-transform: capitalize;
+p.text-color--bright {
+  color: $color-bright;
 }
 
-.usa-color-hex {
-  margin-bottom: 1em;
-  margin-top: 0;
-
-  @include at-media(tablet) {
-    margin: 0;
-  }
+p.text-color--medium {
+  color: $color-medium;
 }
 
-.usa-color-row {
-  margin-bottom: 3rem;
-  margin-top: 1.5rem;
+p.text-color--dark {
+  color: $color-dark;
 }
+
+p.text-color--black {
+  color: $color-black;
+}
+
+p.text-color--white {
+  color: $color-white;
+}
+
+// palette previews
 
 .usa-primary-color-section {
   @include at-media(tablet) {
@@ -79,73 +77,129 @@
   top: 100%;
 }
 
-//// color matrix
-
-.usa-sr-invisible[aria-hidden="true"] {
-  display: block !important;
+.usa-color-name {
+  font-weight: bold;
+  margin-bottom: 0;
+  text-transform: capitalize;
 }
 
-.usa-matrix-foreground-white {
-  color: $color-white;
-
-  // https://css-tricks.com/adding-stroke-to-web-text/
-  text-shadow:
-   -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+.usa-color-hex {
+  margin-top: 0;
 }
 
-.usa-matrix-foreground-light {
-  color: $color-light;
-}
 
-.usa-matrix-foreground-bright {
-  color: $color-bright;
-}
+//// color rows
 
-.usa-matrix-foreground-medium {
-  color: $color-medium;
-}
-
-.usa-matrix-foreground-dark {
-  color: $color-dark;
-}
-
-.usa-matrix-foreground-black {
-  color: $color-black;
-}
-
-.usa-matrix-row {
+.color-row {
   margin-top: 1em;
   margin-bottom: 1em;
-  height: 6em;
-}
 
-.usa-matrix-preview {
-  width: 6em;
-  height: 6em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  float: left;
-
-  strong {
-    text-shadow: none;
+  @include at-media(tablet) {
+    height: 9em;
   }
 }
 
-.usa-matrix-preview--text {
-  margin-left: 7em;
+.color-row--preview {
+  width: 9em;
+  height: 9em;
+
+  p {
+    margin: 1em;
+  }
+
+  p:first-child {
+    padding-top: 1em;
+  }
+
+  @include at-media(tablet) {
+    float: left;
+
+    p:first-child {
+      padding-top: 0;
+    }
+  }
+
+}
+
+.color-row--text {
+  @include at-media(tablet) {
+    width: calc(100% - 11em);
+    float: right;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
 
   p {
     margin-top: 0;
     margin-bottom: 0.5em;
+    margin-right: 4em;
   }
 
 }
 
-.usa-matrix-hexbox::before {
+// nontext elements icon styling
+
+.color-row--preview-non-text {
+
+  &::before {
+    background: none;
+    content: '';
+    display: inline-block;
+    webkit-mask: url('../uswds/img/checkbox-check-print.svg') no-repeat 50% 50%;
+    mask: url('../uswds/img/checkbox-check-print.svg') no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+  }
+
+  &.text-color--white::before {
+    @extend .background-color--white;
+  }
+
+  &.text-color--light::before {
+    @extend .background-color--light;
+  }
+
+  &.text-color--bright::before {
+    @extend .background-color--bright;
+  }
+
+  &.text-color--medium::before {
+    @extend .background-color--medium;
+  }
+
+  &.text-color--dark::before {
+    @extend .background-color--dark;
+  }
+
+  &.text-color--black::before{
+    @extend .background-color--black;
+  }
+
+}
+
+// nontext elements changing text color if too low contrast
+p.low-contrast-with--black,
+p.low-contrast-with--dark,
+p.low-contrast-with--medium {
+  color: $color-white;
+}
+
+p.low-contrast-with--white,
+p.low-contrast-with--light,
+p.low-contrast-with--bright {
+  color: $color-black;
+}
+
+
+// hex previews
+
+.hex-preview::before {
   content: '';
   display: inline-block;
   width: 0.75em;
@@ -154,45 +208,34 @@
   margin-left: 0.25em;
 }
 
-.usa-matrix-hexbox--white::before {
-  @extend .usa-color-white;
+.hex-preview--white::before {
+  @extend .background-color--white;
 }
 
-.usa-matrix-hexbox--light::before {
-  @extend .usa-color-light;
+.hex-preview--light::before {
+  @extend .background-color--light;
 }
 
-.usa-matrix-hexbox--bright::before {
-  @extend .usa-color-bright;
+.hex-preview--bright::before {
+  @extend .background-color--bright;
 }
 
-.usa-matrix-hexbox--medium::before {
-  @extend .usa-color-medium;
+.hex-preview--medium::before {
+  @extend .background-color--medium;
 }
 
-.usa-matrix-hexbox--dark::before {
-  @extend .usa-color-dark;
+.hex-preview--dark::before {
+  @extend .background-color--dark;
 }
 
-.usa-matrix-hexbox--black::before {
-  @extend .usa-color-black;
+.hex-preview--black::before {
+  @extend .background-color--black;
 }
 
 hr {
   border: 1px solid $color-gray-lightest;
 }
 
-// .usa-matrix-square {
-//   width: 4em;
-//   height: 4em;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//
-//   strong {
-//     text-shadow: none;
-//   }
-// }
 
 .usa-matrix-symbol-definitions {
   display: none;
@@ -230,80 +273,3 @@ td[scope="row"] > div {
 .usa-matrix-desc {
     font-size: 0.75em;
   }
-
-
-// @media (min-width: $marge-screen) and (max-width: "#{$large-screen - 1}")
-// @include at-media(mobile)  {
-//   table th, table td {
-//     padding: 0.5em;
-//   }
-//
-//   .usa-matrix-desc {
-//     font-size: 0.75em;
-//   }
-//
-//   td[scope="row"] > div {
-//     flex-direction: column;
-//
-//     .usa-matrix-desc {
-//       padding-top: 0.5em;
-//     }
-//   }
-// }
-
-// @include at-media(tablet) {
-//   td[scope="row"] > div {
-//     .usa-matrix-desc {
-//       padding-left: 0.5em;
-//     }
-//   }
-// }
-
-// @include at-media(tablet) {
-//   .usa-matrix-color-combo-description {
-//     // @include sr-only();
-//   }
-// }
-
-// mobile one-col styles
-
-// @include at-media(mobile) {
-//   .usa-matrix-legend {
-//     display: none;
-//   }
-//
-//   table.usa-matrix {
-//     display: block;
-//
-//     thead {
-//       display: none;
-//     }
-//
-//     tbody {
-//       display: block;
-//
-//       tr {
-//         display: block;
-//
-//         td.usa-matrix-valid-color-combo,
-//         td.usa-matrix-invalid-color-combo, {
-//           display: flex;
-//           align-items: center;
-//
-//           .usa-matrix-color-combo-description {
-//             flex: 1;
-//             padding-left: 1em;
-//           }
-//         }
-//
-//         // td.usa-matrix-invalid-color-combo {
-//         //   display: none;
-//         // }
-//
-//         td[scope="row"] {
-//           display: none;
-//         }
-//       }
-//     }
-//   }
-// }
