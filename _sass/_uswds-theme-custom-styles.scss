@@ -196,8 +196,20 @@ a[href^="https://gsa-tts.slack.com"]::before {
 
 
 // Color palette
-.color-palette .usa-layout-docs {
-  overflow: visible;
+.color-palette .usa-layout-docs__main {
+  max-width: 55rem;
+
+  p {
+    max-width: none;
+  }
+}
+
+.color-palette .usa-matrix {
+  overflow-x: scroll;
+}
+
+.color-palette .usa-matrix {
+  min-width: 100%;
 }
 
 //// Footer (usa-anchor styles)

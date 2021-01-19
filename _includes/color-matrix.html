@@ -13,7 +13,7 @@
   </p>
 </div>
 
-<table class="usa-table-borderless usa-matrix">
+<table class="usa-table--borderless usa-matrix">
   <thead>
     <tr>
       <td scope="col"></td>
@@ -21,7 +21,7 @@
         <td scope="col">
           <div class="usa-matrix-desc">
             {{ foreground.name | capitalize }} text<br>
-            <small>#{{ foreground.hex }}</small><br>
+            #{{ foreground.hex }}<br>
           </div>
           <strong class="usa-matrix-foreground-{{ foreground.name }} usa-sr-invisible" aria-hidden="true">
             Aa
@@ -40,7 +40,7 @@
           <div class="usa-matrix-square usa-color-{{ background.name }}"></div>
           <div class="usa-matrix-desc">
             {{ background.name | capitalize }} background<br>
-            <small>#{{ background.hex }}</small>
+            #{{ background.hex }}
           </div>
         </div>
       </td>

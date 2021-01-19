@@ -52,6 +52,10 @@
   margin-top: 1.5rem;
 }
 
+#guidelines {
+  margin-top: 5rem;
+}
+
 .usa-primary-color-section {
   @include at-media(tablet) {
     margin-bottom: 8rem;
@@ -121,11 +125,12 @@
 }
 
 .usa-matrix-square {
-  width: 4em;
-  height: 4em;
+  width: 3.5em;
+  height: 3.5em;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: units(1);
 
   strong {
     text-shadow: none;
@@ -136,7 +141,7 @@
   display: none;
 }
 
-.usa-matrix-legend {
+.usa-prose .usa-matrix-legend {
   position: relative;
 
   svg {
@@ -148,21 +153,30 @@
   }
 
   p {
+    max-width: measure(6);
     margin-left: 45px;
-    font-size: 0.75em;
+    font-size: .75em;
   }
 }
 
 td[scope="row"] > div {
   display: flex;
+}
 
-  .usa-matrix-desc {
-    flex: 1;
-  }
+.usa-matrix td.usa-matrix-valid-color-combo,
+.usa-matrix td.usa-matrix-invalid-color-combo {
+  padding: .5em .25em;
+}
+
+.usa-matrix-desc {
+  font-size: .85em;
+  flex: 1;
+  line-height: lh('body', 3);
 }
 
 .usa-matrix p {
-  font-size: 0.75em;
+  font-size: .85em;
+  line-height: lh('body', 3);
 }
 
 
