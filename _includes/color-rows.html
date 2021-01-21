@@ -17,7 +17,7 @@
   <div class="color-row">
     <div class="color-row--text">
       <h3>With {{foreground.name }} elements</h3>
-      <p><span class="hex-preview hex-preview--{{foreground.name }}">#{{foreground.hex }}</span> on <span class="hex-preview hex-preview--{{{background.name }}">#{{background.hex }}</span> has a contrast ratio of <strong>{{ ratio | human_readable_contrast_ratio }}</strong>.</p>
+      <p><span class="hex-preview hex-preview--{{foreground.name }}">#{{foreground.hex }}</span> on <span class="hex-preview hex-preview--{{{background.name }}">#{{background.hex }}</span><br> has a contrast ratio of <strong>{{ ratio | human_readable_contrast_ratio }}</strong>.</p>
       {% if ratio <= 3.1 %}
         <p><strong>Do not use this combination.</strong></p>
       {% endif %}
