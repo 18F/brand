@@ -215,43 +215,119 @@ td[scope="row"] > div {
 
 // mobile one-col styles
 
-// @include at-media(mobile) {
-//   .usa-matrix-legend {
-//     display: none;
-//   }
-//
-//   table.usa-matrix {
-//     display: block;
-//
-//     thead {
-//       display: none;
-//     }
-//
-//     tbody {
-//       display: block;
-//
-//       tr {
-//         display: block;
-//
-//         td.usa-matrix-valid-color-combo,
-//         td.usa-matrix-invalid-color-combo, {
-//           display: flex;
-//           align-items: center;
-//
-//           .usa-matrix-color-combo-description {
-//             flex: 1;
-//             padding-left: 1em;
-//           }
-//         }
-//
-//         // td.usa-matrix-invalid-color-combo {
-//         //   display: none;
-//         // }
-//
-//         td[scope="row"] {
-//           display: none;
-//         }
-//       }
-//     }
-//   }
-// }
+  .usa-matrix-legend {
+    display: none;
+  }
+
+  table.usa-matrix {
+    display: block;
+
+    thead {
+      display: none;
+    }
+
+    tbody {
+      display: block;
+
+      tr {
+        display: block;
+
+        td.usa-matrix-valid-color-combo,
+        td.usa-matrix-invalid-color-combo, {
+          display: flex;
+          align-items: center;
+
+          .usa-matrix-color-combo-description {
+            flex: 1;
+            padding-left: 1em;
+          }
+        }
+
+        td.usa-matrix-invalid-color-combo {
+          display: none;
+        }
+
+        td[scope="row"] {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include at-media('tablet-lg') {
+  .usa-matrix-legend {
+    display: none;
+  }
+
+  table.usa-matrix {
+    display: initial;
+
+    thead {
+      display: initial;
+    }
+
+    tbody {
+      display: initial;
+
+      tr {
+        display: initial;
+
+        td.usa-matrix-valid-color-combo,
+        td.usa-matrix-invalid-color-combo, {
+          display: block;
+
+          .usa-matrix-color-combo-description {
+            flex: 1;
+            padding-left: 1em;
+          }
+        }
+
+        td.usa-matrix-invalid-color-combo {
+          display: initial;
+        }
+
+        td[scope="row"] {
+          display: initial;
+        }
+      }
+    }
+  }
+
+@include at-media('tablet-lg') {
+  .usa-matrix-legend {
+    display: none;
+  }
+
+  table.usa-matrix {
+    display: initial;
+
+    thead {
+      display: initial;
+    }
+
+    tbody {
+      display: initial;
+
+      tr {
+        display: initial;
+
+        td.usa-matrix-valid-color-combo,
+        td.usa-matrix-invalid-color-combo, {
+          display: block;
+
+          .usa-matrix-color-combo-description {
+            flex: 1;
+            padding-left: 1em;
+          }
+        }
+
+        td.usa-matrix-invalid-color-combo {
+          display: initial;
+        }
+
+        td[scope="row"] {
+          display: initial;
+        }
+      }
+    }
+  }

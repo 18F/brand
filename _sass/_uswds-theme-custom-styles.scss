@@ -196,16 +196,13 @@ a[href^="https://gsa-tts.slack.com"]::before {
 
 
 // Color palette
-.color-palette .usa-layout-docs__main {
-  max-width: 55rem;
-
-  p {
-    max-width: none;
+@include at-media("tablet") {
+  .color-palette .usa-layout-docs__main {
+    max-width: 55rem;
+    p {
+        max-width: none;
+    }
   }
-}
-
-.color-palette .usa-matrix {
-  overflow-x: scroll;
 }
 
 .color-palette .usa-matrix {
