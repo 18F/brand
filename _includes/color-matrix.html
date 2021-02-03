@@ -66,10 +66,8 @@
         </svg>
         </div>
         {% endif %}
-
-
         <div class="usa-matrix-color-combo-description">
-          <p><strong>{{ foreground.name | capitalize }}</strong> text on <strong>{{ background.name }}</strong> background</p>
+          <p><strong>{{ foreground.name | capitalize }}</strong> text on&nbsp;<strong>{{ background.name }}</strong> background</p>
           <span class="usa-sr-only">is 508-compliant, with a contrast ratio of {{ ratio | human_readable_contrast_ratio }}.</span>
         </div>
       </td>
