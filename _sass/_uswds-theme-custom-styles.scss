@@ -184,6 +184,18 @@ a[href^="https://gsa-tts.slack.com"]::before {
   }
 }
 
+// Typography Page
+.typography-specimen {
+  color: $color-dark;
+}
+  .text-huge {
+    font-size: 140px !important;
+    line-height: 1.05;
+  }
+  .text-tiny {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
 
 //// Footer (usa-anchor styles)
 
