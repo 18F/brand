@@ -49,7 +49,7 @@
       {% if ratio >= 3.1 %}
       <td class="usa-matrix-valid-color-combo">
          {% if ratio >= 4.5%}
-          <div class="usa-matrix-square usa-color-{{ background.name }}"
+          <div class="usa-matrix-square usa-color-{{ background.name }} usa-sr-invisible"
                title="The contrast ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}."
                role="presentation">
 
@@ -58,7 +58,7 @@
             </strong>
           </div>
         {% else %}
-        <div class= "usa-matrix-square">
+        <div class= "usa-matrix-square usa-sr-invisible">
         <svg viewBox="0 0 100 100">
             <rect width="100" height="100" fill="#f0f0f0"/>
             <polygon points="0,0 0,100 100,0" style="fill: #{{background.hex}};" />
