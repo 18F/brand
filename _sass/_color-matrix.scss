@@ -260,35 +260,33 @@ td[scope="row"] > div {
   }
 
   table.usa-matrix {
-    display: initial;
+    display: table;
 
     thead {
-      display: initial;
+      display: table-header-group;
     }
 
     tbody {
-      display: initial;
+      display: table-row-group;
 
       tr {
-        display: initial;
+        display: table-row;
+
 
         td.usa-matrix-valid-color-combo,
         td.usa-matrix-invalid-color-combo, {
-          display: block;
+          display: table-cell;
 
           .usa-matrix-color-combo-description {
             flex: 1;
-            padding-left: 1em;
+            padding-left: 0;
           }
         }
 
-        td.usa-matrix-invalid-color-combo {
-          display: initial;
-        }
-
         td[scope="row"] {
-          display: initial;
+          display: table-cell;
         }
       }
     }
   }
+}
