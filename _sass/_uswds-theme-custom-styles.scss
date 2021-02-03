@@ -194,7 +194,7 @@ a[href^="https://gsa-tts.slack.com"]::before {
   }
   .text-tiny {
     font-size: 15px;
-    letter-spacing: 2px;
+    letter-spacing:letter-spacing(2);
   }
 
 //// Footer (usa-anchor styles)
