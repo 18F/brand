@@ -143,6 +143,12 @@
 
 .usa-prose .usa-matrix-legend {
   position: relative;
+  margin-top: 1em;
+
+  svg, p {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
 
   svg {
     position: absolute;
@@ -154,8 +160,8 @@
 
   p {
     max-width: measure(6);
-    margin-left: 45px;
-    font-size: .75em;
+    margin-left: 3em;
+    font-size: .85em;
   }
 }
 
@@ -256,7 +262,7 @@ td[scope="row"] > div {
 
 @include at-media('tablet-lg') {
   .usa-matrix-legend {
-    display: none;
+    display: initial;
   }
 
   table.usa-matrix {
