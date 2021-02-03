@@ -5,6 +5,13 @@
   </symbol>
 </svg>
 
+<svg class="usa-matrix-symbol-definitions-2">
+  <symbol id="usa-matrix-half-contrast-ratio" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#f0f0f0"/>
+    <polygon points="0,0 0,100 100,0" style="fill:lime;stroke:purple;stroke-width:1" />
+  </symbol>
+</svg>
+
 <div class="usa-matrix-legend">
   <svg><use xlink:href="#usa-matrix-bad-contrast-ratio"/></svg>
 
@@ -46,15 +53,28 @@
       </td>
       {% for foreground in site.data.palette %}
       {% assign ratio = foreground.hex | contrast_ratio with: background.hex %}
-      {% if ratio >= 4.5 %}
+      {% if ratio >= 3.1 %}
       <td class="usa-matrix-valid-color-combo">
-        <div class="usa-matrix-square usa-color-{{ background.name }}"
-             title="The contrast ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}."
-             role="presentation">
-          <strong class="usa-matrix-foreground-{{ foreground.name }} usa-sr-invisible" aria-hidden="true">
-            Aa
-          </strong>
+         {% if ratio >= 4.5%}
+          <div class="usa-matrix-square usa-color-{{ background.name }}"
+               title="The contrast ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}."
+               role="presentation">
+
+            <strong class="usa-matrix-foreground-{{ foreground.name }} usa-sr-invisible" aria-hidden="true">
+              ✓✓✓
+            </strong>
+          </div>
+        {% else %}
+        <div class= "usa-matrix-square">
+        <svg viewBox="0 0 100 100">
+            <rect width="100" height="100" fill="#f0f0f0"/>
+            <polygon points="0,0 0,100 100,0" style="fill: #{{background.hex}};" />
+            <text x="10" y="20" style="fill: #{{ foreground.hex }}; font-size:1em; "> A ✓ </text>
+        </svg>
         </div>
+        {% endif %}
+
+
         <div class="usa-matrix-color-combo-description">
           <p><strong>{{ foreground.name | capitalize }}</strong> text on <strong>{{ background.name }}</strong> background</p>
           <span class="usa-sr-only">is 508-compliant, with a contrast ratio of {{ ratio | human_readable_contrast_ratio }}.</span>
