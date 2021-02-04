@@ -200,7 +200,7 @@ a[href^="https://gsa-tts.slack.com"]::before {
   .color-palette .usa-layout-docs__main {
     max-width: 55rem;
     p {
-        max-width: none;
+        max-width: measure(5); 
     }
   }
 }
