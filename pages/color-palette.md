@@ -43,6 +43,6 @@ We recommend using a higher standard when using the 18F palette:
 * Large **and** small text should have a contrast ratio of 4.5:1 or more with its background.
 * Non-text elements should have a contrast ratio of 3:1 or more with its background color.
 
-Below is an outline of accessible 18F color combinations.
+Below is an outline of accessible 18F color combinations, with the contrast ratio displayed.
 
 {% include color-matrix.html %}
