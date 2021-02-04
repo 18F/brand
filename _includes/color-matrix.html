@@ -48,14 +48,14 @@
       {% assign ratio = foreground.hex | contrast_ratio with: background.hex %}
       {% if ratio >= 3.1 %}
       <td class="usa-matrix-valid-color-combo">
-        <div class="usa-matrix-square usa-color-{{ background.name }}"
+        <div class="usa-matrix-square usa-color-{{ background.name }} text-center"
              title="The contrast ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}."
              role="presentation">
           <span class="usa-matrix-foreground-{{ foreground.name }} usa-sr-invisible" aria-hidden="true">
             {% if ratio >= 4.5 %}
               {{ratio | round: 1}} <br> A a ★
             {% else %}
-              {{ratio | round: 1}} <br> A ★
+              {{ratio | round: 1}} <br>★
             {% endif %}
           </span>
         </div>
