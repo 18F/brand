@@ -41,8 +41,8 @@ search_site_handle: 18f-brand
 
 scripts:
   - assets/uswds/js/uswds.min.js
-  - javascripts/private-eye.js
-  - javascripts/application.js
+  - javascript/private-eye.js
+  - javascript/application.js
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
