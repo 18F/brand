@@ -5,20 +5,20 @@
   </symbol>
 </svg>
 
-<div class="usa-matrix-legend">
-  <svg><use xlink:href="#usa-matrix-bad-contrast-ratio"/></svg>
+<div class="usa-matrix-legend legend-bad-contrast">
+  <svg viewBox= "0 0 100 100"><use xlink:href="#usa-matrix-bad-contrast-ratio"/></svg>
 
   <p class="usa-sr-invisible" aria-hidden="true">
     <strong>Don&rsquo;t</strong> use these color combinations. They don&rsquo;t have enough contrast to meet accessibility standards, and some people will have difficulty reading the text.
   </p>
 </div>
 <div class="usa-matrix-legend">
-    <svg viewBox="0 0 100 100">
+    <svg viewBox="0 0 100 100" class="usa-sr-invisible" aria-hidden="true">
     <rect width="100" height="100" fill="#f0f0f0"/>
     <polygon points="0,0 0,100 100,0" style="fill:#121212;" />
-    <text x="10" y="40" style="fill: #f1f2f1; font-family:Helvetica Neue, Helvetica, Roboto, Arial, sans-serif; font-size:2em; "> ✓ </text>
+    <text x="10" y="40" style="fill: #f1f2f1; font-family:Helvetica Neue, Helvetica, Roboto, Arial, sans-serif; font-size:2em; "> ★ </text>
   </svg>
-  <p> Only use these color combinations for non-text elements.</p>
+  <p class="usa-sr-invisible" aria-hidden="true"> Only use these color combinations for non-text elements.</p>
 </div>
 
 <table class="usa-table--borderless usa-matrix">
@@ -56,28 +56,32 @@
       {% assign ratio = foreground.hex | contrast_ratio with: background.hex %}
       {% if ratio >= 3.1 %}
       <td class="usa-matrix-valid-color-combo">
-         {% if ratio >= 4.5%}
+        {% if ratio >= 4.5%}
           <div class="usa-matrix-square usa-color-{{ background.name }} usa-sr-invisible"
                title="The contrast ratio of {{ foreground.name }} on {{ background.name }} is {{ ratio | human_readable_contrast_ratio }}."
                role="presentation">
 
             <strong class="usa-matrix-foreground-{{ foreground.name }} usa-sr-invisible" aria-hidden="true">
-              A a ✓
+              Aa ★
             </strong>
           </div>
+          <div class="usa-matrix-color-combo-description">
+            <p><strong>{{ foreground.name | capitalize }}</strong> elements on&nbsp;<strong>{{ background.name }}</strong> background</p>
+            <span class="usa-sr-only">is 508-compliant, with a contrast ratio of {{ ratio | human_readable_contrast_ratio }}.</span>
+          </div>
         {% else %}
-        <div class= "usa-matrix-square usa-sr-invisible">
-        <svg viewBox="0 0 100 100">
-            <rect width="100" height="100" fill="#f0f0f0"/>
-            <polygon points="0,0 0,100 100,0" style="fill: #{{background.hex}};" />
-            <text x="10" y="40" style="fill: #{{ foreground.hex }}; font-family:Helvetica Neue, Helvetica, Roboto, Arial, sans-serif; font-size:1.75em; "> ✓ </text>
-        </svg>
-        </div>
+          <div class= "usa-matrix-square usa-sr-invisible" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+              <rect width="100" height="100" fill="#f0f0f0"/>
+              <polygon points="0,0 0,100 100,0" style="fill: #{{background.hex}};" />
+              <text x="10" y="40" style="fill: #{{ foreground.hex }}; font-family:Helvetica Neue, Helvetica, Roboto, Arial, sans-serif; font-size:1.75em; "> ★ </text>
+          </svg>
+          </div>
+          <div class="usa-matrix-color-combo-description">
+            <p><strong>{{ foreground.name | capitalize }}</strong> elements on&nbsp;<strong>{{ background.name }}</strong> background</p>
+            <span class="usa-sr-only">is 508-compliant, with a contrast ratio of {{ ratio | human_readable_contrast_ratio }}. We recommend using this combination only for non-text elements. </span>
+          </div>
         {% endif %}
-        <div class="usa-matrix-color-combo-description">
-          <p><strong>{{ foreground.name | capitalize }}</strong> text on&nbsp;<strong>{{ background.name }}</strong> background</p>
-          <span class="usa-sr-only">is 508-compliant, with a contrast ratio of {{ ratio | human_readable_contrast_ratio }}.</span>
-        </div>
       </td>
       {% else %}
       <td class="usa-matrix-invalid-color-combo">

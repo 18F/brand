@@ -151,7 +151,7 @@
     margin-bottom: 0.5em;
   }
 
-  svg {
+  svg{
     width: 35px;
     height: 35px;
   }
@@ -162,6 +162,11 @@
     font-size: .85em;
   }
 }
+
+.usa-matrix-legend.legend-bad-contrast {
+  display: none;
+}
+
 
 td[scope="row"] > div {
   display: flex;
@@ -218,9 +223,6 @@ td[scope="row"] > div {
 
 // mobile one-col styles
 
-  .usa-matrix-legend {
-    display: none;
-  }
 
   table.usa-matrix {
     display: block;
@@ -258,8 +260,8 @@ td[scope="row"] > div {
   }
 
 @include at-media('tablet-lg') {
-  .usa-matrix-legend {
-    display: initial;
+.usa-matrix-legend.legend-bad-contrast {
+    display: flex;
   }
 
   table.usa-matrix {
