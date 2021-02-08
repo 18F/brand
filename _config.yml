@@ -37,7 +37,7 @@ dap_agency: GSA
 dap_subagency: 18F,TTS
 
 # Add search site handle to enable search
-# search_site_handle: ux-guide.18f.gov
+search_site_handle: 18f-brand
 
 scripts:
   - assets/uswds/js/uswds.min.js
