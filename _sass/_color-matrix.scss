@@ -188,76 +188,41 @@ td[scope="row"] > div {
   line-height: lh('body', 3);
 }
 
-// @media (min-width: $marge-screen) and (max-width: "#{$large-screen - 1}")
-// @include at-media(mobile)  {
-//   table th, table td {
-//     padding: 0.5em;
-//   }
-//
-//   .usa-matrix-desc {
-//     font-size: 0.75em;
-//   }
-//
-//   td[scope="row"] > div {
-//     flex-direction: column;
-//
-//     .usa-matrix-desc {
-//       padding-top: 0.5em;
-//     }
-//   }
-// }
 
-// @include at-media(tablet) {
-//   td[scope="row"] > div {
-//     .usa-matrix-desc {
-//       padding-left: 0.5em;
-//     }
-//   }
-// }
+table.usa-matrix {
+  display: block;
 
-// @include at-media(tablet) {
-//   .usa-matrix-color-combo-description {
-//     // @include sr-only();
-//   }
-// }
+  thead {
+    display: none;
+  }
 
-// mobile one-col styles
-
-
-  table.usa-matrix {
+  tbody {
     display: block;
 
-    thead {
-      display: none;
-    }
-
-    tbody {
+    tr {
       display: block;
 
-      tr {
-        display: block;
+      td.usa-matrix-valid-color-combo,
+      td.usa-matrix-invalid-color-combo, {
+        display: flex;
+        align-items: center;
 
-        td.usa-matrix-valid-color-combo,
-        td.usa-matrix-invalid-color-combo, {
-          display: flex;
-          align-items: center;
-
-          .usa-matrix-color-combo-description {
-            flex: 1;
-            padding-left: 1em;
-          }
+        .usa-matrix-color-combo-description {
+          flex: 1;
+          padding-left: 1em;
         }
+      }
 
-        td.usa-matrix-invalid-color-combo {
-          display: none;
-        }
+      td.usa-matrix-invalid-color-combo {
+        display: none;
+      }
 
-        td[scope="row"] {
-          display: none;
-        }
+      td[scope="row"] {
+        display: none;
       }
     }
   }
+}
 
 @include at-media('tablet-lg') {
 .usa-matrix-legend.legend-bad-contrast {
