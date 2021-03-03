@@ -144,7 +144,8 @@
 .usa-prose .usa-matrix-legend {
   display: flex;
   margin-top: 0.5em;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: top;
 
   svg, p {
     margin-top: 0.5em;
@@ -152,11 +153,14 @@
   }
 
   svg{
+    flex: 0 0 auto;
     width: 35px;
     height: 35px;
   }
 
   p {
+    flex-grow: 1;
+    flex-shrink: 1;
     max-width: measure(6);
     margin-left: 1em;
     font-size: .85em;
@@ -225,6 +229,10 @@ table.usa-matrix {
 }
 
 @include at-media('tablet-lg') {
+.usa-prose .usa-matrix-legend  {
+  align-items: center;
+}
+
 .usa-matrix-legend.legend-bad-contrast {
     display: flex;
   }
