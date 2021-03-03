@@ -11,7 +11,7 @@ Our visual identity is a flexible system that helps you communicate clearly whil
 
 This identity is integral to our ability to communicate our goals and deliver high-quality products. We recognize that having a strong brand is as important for government agencies as it is for private companies, and our users expect nothing less.
 
-Because a brand communicates [our core values](https://pages.18f.gov/core-values/), it helps us build trust with our partners, increase engagement, foster input and open-source contributions, and improve the public&rsquo;s perception of government, all of which are central to [our mission](https://github.com/18F/core-values/blob/18f-pages/pages/vision-mission.md).
+Because a brand communicates [our core values](https://handbook.tts.gsa.gov/history-and-values/#our-values), it helps us build trust with our partners, increase engagement, foster input and open-source contributions, and improve the public&rsquo;s perception of government, all of which are central to [our mission](https://18f.gsa.gov/about/#our-mission).
 
 ## If you work at another organization
 As a work of the federal government, this project is in the public domain within the United States. Additionally, we waive copyright and related rights in the work worldwide through the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal public domain dedication</a>.

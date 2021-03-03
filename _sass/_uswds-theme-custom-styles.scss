@@ -29,6 +29,8 @@ $color-gray-divider:  color("gray-20");
 
 $color-gray-border:   color("base-dark");
 
+$logo-size-lg: 3rem;
+$logo-size-md: 2rem;
 
 // Typography
 .usa-prose{
@@ -84,6 +86,27 @@ a:hover {
 
 .usa-nav__secondary-links {
   display: none;
+}
+
+// icon
+.usa-header.usa-header--extended .usa-logo-img {
+  height: $logo-size-md;
+}
+
+.usa-logo__text {
+  line-height: $logo-size-md;
+}
+
+
+@include at-media('tablet') {
+  .usa-header.usa-header--extended .usa-logo-img {
+    height: $logo-size-lg;
+  }
+
+  .usa-logo__text {
+    line-height: $logo-size-lg;
+  }
+
 }
 
 // usa-sidenav
@@ -194,13 +217,25 @@ a[href^="https://gsa-tts.slack.com"]::before {
   }
 }
 
+// Typography Page
+.typography-specimen {
+  color: $color-dark;
+}
+  .text-huge {
+    font-size: 140px !important;
+    line-height: 1.05;
+  }
+  .text-tiny {
+    font-size: 15px;
+    letter-spacing:letter-spacing(2);
+  }
 
 // Color palette
 @include at-media("tablet") {
   .color-palette .usa-layout-docs__main {
     max-width: 55rem;
     p {
-        max-width: measure(5); 
+        max-width: measure(5);
     }
   }
 }
