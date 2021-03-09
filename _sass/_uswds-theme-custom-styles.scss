@@ -2,13 +2,23 @@
 //// 18F styles
 
 // Color
-$color-light:        color("cyan-10v");
-$color-bright:       color("cyan-30v");
-$color-medium:       color("primary");
-$color-dark:         color("primary-dark");
-$color-base:         color("primary-dark");
+$color-light:        #b3efff; // $color-light / $color-secondary-light
+$color-bright:       #00cfff; // $color-bright / $color-secondary
+$color-medium:       #046b99; // $color-medium / $theme-color-primary
+$color-dark:         #1C304A; // $color-dark / $theme-color-primary-dark
+$color-base:         #1F2E4A;
+$color-white:        color("white");
 $color-black:        color("black");
 $color-inverse:      color("white");
+
+//// originals
+// $color-light:        color("cyan-10v");
+// $color-bright:       color("cyan-30v");
+// $color-medium:       color("primary");
+// $color-dark:         color("primary-dark");
+// $color-base:         color("primary-dark");
+// $color-black:        color("black");
+// $color-inverse:      color("white");
 
 $color-bright-hover: color("accent-cool-dark");
 $color-medium-hover: color("blue-60");
@@ -220,6 +230,20 @@ a[href^="https://gsa-tts.slack.com"]::before {
     letter-spacing:letter-spacing(2);
   }
 
+// Color palette
+@include at-media("tablet") {
+  .color-palette .usa-layout-docs__main {
+    max-width: 55rem;
+    p {
+        max-width: measure(5);
+    }
+  }
+}
+
+.color-palette .usa-matrix {
+  min-width: 100%;
+}
+
 //// Footer (usa-anchor styles)
 
 // Fixing footer anchor to bottom
@@ -230,3 +254,6 @@ a[href^="https://gsa-tts.slack.com"]::before {
     min-height: 100vh;
   }
 }
+
+@import '_usa_anchor';
+@import '_color-matrix';

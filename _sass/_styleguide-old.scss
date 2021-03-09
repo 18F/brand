@@ -3,16 +3,6 @@
 $width-nav-sidebar:  250px;
 $site-top:           98px;
 
-//fix these Variables
-$color-white: #fff;
-$color-gray-light: #000;
-$color-gray-dark: #000;
-$medium-screen: 1200px;
-$site-margins: 10px;
-$h3-font-size: inherit;
-$h5-font-size: inherit;
-//// @media screen and ($medium-screen + $width-nav-sidebar)
-
 // Navigation ------------- //
 
 .usa-site-header {
@@ -29,7 +19,7 @@ $h5-font-size: inherit;
   }
 
   .usa-site-navbar {
-    @media screen and ($medium-screen + $width-nav-sidebar) {
+    @include media($medium-screen + $width-nav-sidebar) {
       height: 6rem;
       margin: {
         bottom: 1rem;
@@ -39,7 +29,7 @@ $h5-font-size: inherit;
     margin-top: 4px;
 
     .logo {
-      @media screen and ($medium-screen + $width-nav-sidebar) {
+      @include media($medium-screen + $width-nav-sidebar) {
         padding-left: $site-margins;
         text-align: left;
         padding-top: 0;
@@ -69,7 +59,7 @@ $h5-font-size: inherit;
     }
 
     h1 {
-      @media screen and ($medium-screen + $width-nav-sidebar) {
+      @include media($medium-screen + $width-nav-sidebar) {
         display: block;
         font-size: $h3-font-size;
         float: right;
@@ -83,7 +73,7 @@ $h5-font-size: inherit;
 }
 
 .menu-btn {
-  @media screen and ($medium-screen + $width-nav-sidebar) {
+  @include media($medium-screen + $width-nav-sidebar) {
     display: none;
   }
   display: inline;
@@ -108,24 +98,24 @@ $h5-font-size: inherit;
   }
 }
 
-// #menu-content {
-//   @media (max-width: $medium-screen + $width-nav-sidebar) {
-//     $sliding-panel-width: 220px;
-//
-//     @include position(fixed, 0 auto 0 0);
-//     @include size($sliding-panel-width 100%);
-//     @include transform(translateX(- $sliding-panel-width));
-//     background: #fff;
-//     -webkit-overflow-scrolling: touch;
-//     overflow-y: auto;
-//     z-index: 999999;
-//     display: block;
-//     &.is-visible {
-//       @include transition(all 0.25s linear);
-//       @include transform(translateX(0));
-//     }
-//   }
-// }
+#menu-content {
+  @media (max-width: $medium-screen + $width-nav-sidebar) {
+    $sliding-panel-width: 220px;
+
+    @include position(fixed, 0 auto 0 0);
+    @include size($sliding-panel-width 100%);
+    @include transform(translateX(- $sliding-panel-width));
+    background: #fff;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    z-index: 999999;
+    display: block;
+    &.is-visible {
+      @include transition(all 0.25s linear);
+      @include transform(translateX(0));
+    }
+  }
+}
 
 .overlay {
   @include position(fixed, 0 0 0 0);
@@ -166,7 +156,7 @@ $h5-font-size: inherit;
     width: 75%;
   }
 
-  @media screen and ($medium-screen + $width-nav-sidebar) {
+  @include media($medium-screen + $width-nav-sidebar) {
     width: calc(100% - #{$width-nav-sidebar});
 
     .lt-ie9 & {
@@ -221,7 +211,7 @@ h2.styleguide-header {
     }
   }
 
-  @media screen and ($medium-screen + $width-nav-sidebar) {
+  @include media($medium-screen + $width-nav-sidebar) {
     display: block;
   }
 }
