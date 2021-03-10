@@ -8,8 +8,7 @@ Logo variations (PNG, SVG)
 
 ![]({{ site.baseurl }}/assets/img/18F-Logo-M.png){:.display-logo}
 
-[Download logo]({{ site.baseurl }}/assets/dist/18F_Logo.zip)
-{:.usa-button }
+[Download logo]({{ site.baseurl }}/assets/dist/18F_Logo.zip){:.usa-button }
 
 ## Guidelines
 
@@ -19,7 +18,7 @@ Logo variations (PNG, SVG)
 
 *	**Do** use the SVG logo whenever possible. It has a small file size and renders well at any scale. PNG is an acceptable fallback if the format of your document doesn&rsquo;t support SVG.
 
-*	**Do** ask in (#18f-branding)[https://18f.slack.com/archives/18f-branding] when you have questions.
+*	**Do** ask in [#18f-branding](https://gsa-tts.slack.com/archives/C04B8KGCZ) when you have questions.
 
 *	**Don't** change the color of the logo.
 
