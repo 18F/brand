@@ -11,10 +11,6 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.0"
 gem 'jekyll-sitemap'
 
-<<<<<<< HEAD
-gem 'jekyll'
-gem 'redcarpet', '3.5.1'
-=======
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem 'uswds-jekyll', '~> 5.0'
 
@@ -36,5 +32,4 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # Older gems, need to Chesterton fence
 gem 'redcarpet', '3.3.3'
->>>>>>> 30fa8f2d7328965132b28cf81d22896814455d13
 gem 'wcag_color_contrast', '0.0.1'

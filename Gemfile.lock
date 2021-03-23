@@ -75,17 +75,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
-  jekyll
-  redcarpet (= 3.5.1)
-=======
   jekyll (~> 4.0)
   jekyll-feed (~> 0.6)
   jekyll-sitemap
   redcarpet (= 3.3.3)
   tzinfo-data
   uswds-jekyll (~> 5.0)
->>>>>>> 30fa8f2d7328965132b28cf81d22896814455d13
   wcag_color_contrast (= 0.0.1)
 
 BUNDLED WITH
