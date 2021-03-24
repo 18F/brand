@@ -79,7 +79,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 4.0)
+  jekyll (>= 4.1.1)
   jekyll-feed (~> 0.6)
   jekyll-sitemap
   redcarpet (= 3.3.3)
