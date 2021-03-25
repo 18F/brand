@@ -31,5 +31,5 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 
 # Older gems, need to Chesterton fence
-gem 'redcarpet', '3.5'
+gem 'redcarpet', '~> 3.5.1'
 gem 'wcag_color_contrast', '0.0.1'
