@@ -60,7 +60,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    redcarpet (3.3.3)
+    redcarpet (3.5.0)
     rexml (3.2.4)
     rouge (3.26.0)
     safe_yaml (1.0.5)
@@ -82,7 +82,7 @@ DEPENDENCIES
   jekyll (>= 4.1.1)
   jekyll-feed (~> 0.6)
   jekyll-sitemap
-  redcarpet (= 3.3.3)
+  redcarpet (= 3.5)
   tzinfo-data
   uswds-jekyll (~> 5.0)
   wcag_color_contrast (= 0.0.1)
