@@ -1,14 +1,58 @@
-name: 18F Visual Identity
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-repo:
-- name: 18F Visual Identity
-  description: Main repository for 18F's visual identity resources
-  url: https://github.com/18F/brand
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Visual Identity
+email: 18f-xd@gsa.gov
+description: >-
+  Main repository for 18F's visual identity resources
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https:/brand.18f.gov" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: 18f
+github_username: 18f
 
-exclude:
-- README.md
-- LICENSE.md
-- vendor
+include: ['_pages']
 
-sass:
-  style: nested
+# Build settings
+markdown: kramdown
+theme: uswds-jekyll
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Google Analytics & DAP tracking code for handbook
+google_analytics_ua: UA-48605964-19
+dap_agency: GSA
+dap_subagency: 18F,TTS
+
+# Add search site handle to enable search
+search_site_handle: 18f-brand
+
+scripts:
+  - assets/uswds/js/uswds.min.js
+  - javascript/application.js
+  - javascript/private-eye.js
+#  - javascript/external-links.js
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
