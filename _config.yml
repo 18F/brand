@@ -43,7 +43,7 @@ scripts:
   - assets/uswds/js/uswds.min.js
   - javascript/application.js
   - javascript/private-eye.js
-#  - javascript/external-links.js
+  - javascript/external-links.js
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
