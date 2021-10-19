@@ -1,9 +1,16 @@
 ---
-permalink: /desktop-art/
+permalink: /images/
 layout: post
-title: Desktop art
+title: Images
 ---
+## Virtual backgrounds
+A collection of images containing the 18F logo that can be used as virtual backgrounds for video calls.
 
+![]({{ site.baseurl }}/assets/img/18F_VideoBG_6Illo.png)
+
+[Download virtual backgrounds]({{ site.baseurl }}/assets/dist/18F_VideoBackgrounds.zip){:.usa-button }
+
+## Desktop Art
 A variety of wallpaper images for MacBooks and Apple Displays.
 
 ![]({{ site.baseurl }}/assets/img/18FDesktop-Preview.png)
