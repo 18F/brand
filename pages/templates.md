@@ -21,7 +21,7 @@ We have three Google Docs templates:a [basic outline](https://docs.google.com/a/
 ***
 
 ## Google Slides presentation templates
-![]({{site.baseurl }}/assets/img/Template_Preview.png)
+![]({{site.baseurl }}/assets/img/18F-slide-theme-cover.svg)
 
 [GSA slide template gallery](https://docs.google.com/presentation/u/0/?ftv=1&folder=0BwWYNZcEDfwabE13dnZpbFN5QmM&tgif=d){:.usa-button }
 
