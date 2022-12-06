@@ -28,14 +28,14 @@ We have three Google Docs templates:a [basic outline](https://docs.google.com/a/
 ### Instructions
 #### To make a new Google Slides presentation
 1. In Google Drive, click **New > Google Slides > From a template**.
-2. Once the GSA Template Gallery opens, choose the **18F Slide Theme_MASTER** presentation from the list.
+2. Once the GSA Template Gallery opens, choose the **18F Slide Theme** presentation from the list.
 3. This will create a copy of the template. Rename your presentation so that the team doesn't confuse it with the original.
 
 #### To import the theme into an existing Google Slides presentation
 1. Open your existing presentation.
 2. Choose the **Theme** button in the toolbar.
 3. Click **Import theme** at the bottom of the theme menu.
-4. Search for **18F Slide Theme_Master**.
+4. Search for **18F Slide Theme**.
 5. Select and import the theme.
 
 You can choose different layouts by selecting and inserting master pages from the template. For more details, learn about [custom layouts and themes](https://support.google.com/docs/answer/1694986?hl=en).
