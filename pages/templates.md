@@ -4,14 +4,19 @@ layout: post
 title: Templates
 ---
 ## Google Docs templates
-We have three Google Docs templates:a [basic outline](https://docs.google.com/a/gsa.gov/document/d/1lJBCZwgQzKsX5ggr7ykUaeuAUNqKsthENYCXMTA5Tbs/edit?usp=sharing), a [detailed example](https://docs.google.com/a/gsa.gov/document/d/1BovRM6thz0YWCyd32zwbh-6TYy4ON6GEc8ILDd3RLl8/edit?usp=sharing) with a table of contents, tables, typographic elements, and an appendix, and a [letterhead](https://docs.google.com/document/d/16rQOcP9XYu4qlPwrswTXKO7XBKegxejvXocxo98rW5c/edit?usp=sharing).
+We have three Google Docs templates: a [basic outline](https://docs.google.com/a/gsa.gov/document/d/1lJBCZwgQzKsX5ggr7ykUaeuAUNqKsthENYCXMTA5Tbs/edit?usp=sharing), a [detailed example](https://docs.google.com/a/gsa.gov/document/d/1BovRM6thz0YWCyd32zwbh-6TYy4ON6GEc8ILDd3RLl8/edit?usp=sharing) with a table of contents, tables, typographic elements, and an appendix, and a [letterhead](https://docs.google.com/document/d/16rQOcP9XYu4qlPwrswTXKO7XBKegxejvXocxo98rW5c/edit?usp=sharing).
 
 ### Instructions
 #### To save 18F styles as your default Google styles:
 1. Open the [basic outline](https://docs.google.com/a/gsa.gov/document/d/1lJBCZwgQzKsX5ggr7ykUaeuAUNqKsthENYCXMTA5Tbs/edit?usp=sharing).
-2. In the Styles drop-down menu, choose **Options > Save as my default styles**.
-3. Click **File > New > Document** or open an existing document to apply the 18F styles to it.
-4. In the Styles drop-down menu, choose **Options > Use my default styles**.
+2. In the Styles drop-down menu, choose **Options > Save as my default styles**. Any new Google document you create will use the 18F styles by default.
+![Screenshot showing how to save 18F styles as default styles in Google Docs]({{site.baseurl }}/assets/img/Save-18F-styles-as-default.png)
+
+#### To apply 18F styles to an existing Google document:
+1. Follow the instructions above to save 18F styles as your default Google styles. 
+2. Open an existing document you want to apply the 18F styles to.
+3. In the Styles drop-down menu, choose **Options > Use my default styles**. This will apply the 18F styles and override any existing styles in the document. 
+![Screenshot showing how to apply default styles to an existing Google Doc]({{site.baseurl }}/assets/img/Apply-18F-styles-existing-doc.png)
 
 #### To reuse specific tables or typographic elements in a Google Doc:
 1. Open the [detailed example](https://docs.google.com/a/gsa.gov/document/d/1BovRM6thz0YWCyd32zwbh-6TYy4ON6GEc8ILDd3RLl8/edit?usp=sharing).
