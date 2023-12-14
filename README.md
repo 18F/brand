@@ -1,3 +1,5 @@
+**⚠️ This guide has moved to the [consolidated 18F guides repository](https://github.com/18F/guides).**
+
 # 18F Visual Identity
 This is the home of 18F's evolving brand assets and visual style guide. It's a work in progress, and we are releasing new assets as we are able.
 
